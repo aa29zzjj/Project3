@@ -57,11 +57,18 @@ run:
 6. Exit
 
 0
+
 Current size of chain: 1
+
 Current hashes per second by this machine: 1846198
+
 Difficulty of most recent block: 2
+
+
 Nonce for most recent block: 1154
+
 Chain hash: 00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -71,9 +78,13 @@ Chain hash: 00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8
 6. Exit
 
 2
+
 Verifying entire chain
+
 Chain verification: true
+
 Total execution time required to verify the chain was 0 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -83,9 +94,12 @@ Total execution time required to verify the chain was 0 milliseconds
 6. Exit
 
 3
+
 View the Blockchain
+
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2}
  ], "chainHash":"00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8"}
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -95,11 +109,17 @@ View the Blockchain
 6. Exit
 
 1
+
 Enter difficulty > 0
+
 5
+
 Enter transaction
+
 Alice pays Bob 100 USD
+
 Total execution time to add this block was 28071 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -109,11 +129,17 @@ Total execution time to add this block was 28071 milliseconds
 6. Exit
 
 1
+
 Enter difficulty > 0
+
 5
+
 Enter transaction
+
 Bob pays Eve 50 USD
+
 Total execution time to add this block was 2066 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -123,11 +149,17 @@ Total execution time to add this block was 2066 milliseconds
 6. Exit
 
 1
+
 Enter difficulty > 0
+
 6
+
 Enter transaction
+
 Eve pays Charlie 10 USD
+
 Total execution time to add this block was 47166 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -137,9 +169,13 @@ Total execution time to add this block was 47166 milliseconds
 6. Exit
 
 2
+
 Verifying entire chain
+
 Chain verification: true
+
 Total execution time required to verify the chain was 0 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -149,12 +185,15 @@ Total execution time required to verify the chain was 0 milliseconds
 6. Exit
 
 3
+
 View the Blockchain
+
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
 {"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
 {"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Bob pays Eve 50 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 107856,"difficulty": 5},
 {"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "0000017BA1238C419C992654EAFC5417F1BDBAF2FECFCF44328B0CCD777EDBF4","nonce" : 2475995,"difficulty": 6}
  ], "chainHash":"000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF"}
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -164,11 +203,17 @@ View the Blockchain
 6. Exit
 
 0
+
 Current size of chain: 4
+
 Current hashes per second by this machine: 1946252
+
 Difficulty of most recent block: 6
+
 Nonce for most recent block: 2475995
+
 Chain hash: 000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -178,12 +223,18 @@ Chain hash: 000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF
 6. Exit
 
 4
+
 Corrupt the Blockchain
+
 Enter block ID of block to Corrupt
 2
+
 Enter new data for block 2
+
 Charlie pays Dave 3 USD
+
 Block 2 now holds Charlie pays Dave 3 USD
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -193,12 +244,15 @@ Block 2 now holds Charlie pays Dave 3 USD
 6. Exit
 
 3
+
 View the Blockchain
+
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
 {"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
 {"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Charlie pays Dave 3 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 107856,"difficulty": 5},
 {"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "0000017BA1238C419C992654EAFC5417F1BDBAF2FECFCF44328B0CCD777EDBF4","nonce" : 2475995,"difficulty": 6}
  ], "chainHash":"000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF"}
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -208,10 +262,15 @@ View the Blockchain
 6. Exit
 
 2
+
 Verifying entire chain
+
 ..Improper hash on node 2 Does not begin with 00000
+
 Chain verification: false
+
 Total execution time required to verify the chain was 0 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -221,8 +280,11 @@ Total execution time required to verify the chain was 0 milliseconds
 6. Exit
 
 5
+
 Repairing the entire chain
+
 Total execution time required to repair the chain was 26132 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -232,12 +294,15 @@ Total execution time required to repair the chain was 26132 milliseconds
 6. Exit
 
 3
+
 View the Blockchain
+
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
 {"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
 {"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Charlie pays Dave 3 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 441725,"difficulty": 5},
 {"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "00000B1C711B1D81B7724D0FC11C3D2AC51345E505B4CF72121D246519C20101","nonce" : 852425,"difficulty": 6}
  ], "chainHash":"000000D44CB102756678DBE10C321D2A93F9FCA9A8FE370FF888C18CAF7C11D0"}
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -247,9 +312,13 @@ View the Blockchain
 6. Exit
 
 2
+
 Verifying entire chain
+
 Chain verification: true
+
 Total execution time required to verify the chain was 0 milliseconds
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
