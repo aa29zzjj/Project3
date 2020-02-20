@@ -332,6 +332,8 @@ Total execution time required to verify the chain was 0 milliseconds
 
 **Task 0 Grading Rubric 50 Points**
 
+See the Javadoc for a description of the main routine and the difficulty levels.
+
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
@@ -345,41 +347,6 @@ Total execution time required to verify the chain was 0 milliseconds
 ||||||
 |Submission requirements met|1|0|0|0|
 
-See the Javadoc for a description of the main routine and the difficulty levels.
-
-
-
-| Excellent|Good but minor problems|Poor serious problems|No submission|
-
-|----------|-----------------------|---------------------|-------------|
-
-
-|   0      |     1               |       2               |    3        |
-
-
-
-|Works.
-A screen scrape
-is provided that
-shows the exact
-same user
-selections.|44|40|30|0|
-
-|The main method
-of the BlockChain
-class is documented
-and describes
-behavior with
-difficulty levels
-of 4 and 5
-(see Javadoc)|4|3|2|0|
-
-Separation of
-concerns & good
-style                 1           0                        0                         0
-
-Submission requirements
-met                   1 0                            0
 
 
 
@@ -398,31 +365,26 @@ You are required to design two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server.
 Each JSON request message will include a signature.
 
-Task 1 Grading Rubric 50 Points
 
-                         Excellent     Good - minor problems    Poor - serious problemsNo submission
+**Task 1 Grading Rubric 50 Points**
 
-This is a working client
-and server. A screen
-scrape is provided
-that shows the exact
-same user selections as
-in Task 0.                  40            36                     30                        0
 
-The format of the
-JSON request and
-response messages
-is designed well.           4              3                      2                        0
 
-The server verifies
-the signature on each
-request.4              3                      2                        1
+|                   |Excellent|Good|Poor|No submission|
+|-------------------|---------|----|----|-------------|
+|Screenscrape shows client server and|40       | 36 | 30 | 0           |
+|exact same execution as Task 0|||||
+||||||
+|Request response JSON message format designed well|4|3|2|0|
+||||||
+|Server verifies ID and signature on each request|4|3|2|1|
+|Separation of concerns and good style|1|0|0|0|
+||||||
+|Submission requirements met|1|0|0|0|
 
-Separation of concerns
-& good style                1              0                      0                        0
 
-Submission requirements
-met                         1              00                        0
+
+
 
 
 **Project 3 Submission Requirements**
