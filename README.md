@@ -333,9 +333,10 @@ Total execution time required to verify the chain was 0 milliseconds
 **Task 0 Grading Rubric 50 Points**
 
 
-|Excellent|Good|Poor|No submission|
-|---------|----|----|-------------|
-|0        | 1  |   2|             |
+|         |Excellent|Good|Poor|No submission|
+|---------|---------|----|----|-------------|
+|Execution|44       | 40 | 30 | 0           |
+
 
 
 See the Javadoc for a description of the main routine and the difficulty levels.
