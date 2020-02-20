@@ -330,24 +330,26 @@ Total execution time required to verify the chain was 0 milliseconds
 6
 
 **Task 0 Grading Rubric 50 Points**
-See the Javadoc for a description of the main routine and the difficulty levels.
-                     Excellent   Good - Minor problems   Poor - serious problems  No submission
 
-Works.
+See the Javadoc for a description of the main routine and the difficulty levels.
+
+| Excellent|Good - Minor problems|Poor - serious problems|No submission|
+|----------|---------------------|-----------------------|-------------|
+|Works.
 A screen scrape
 is provided that
 shows the exact
 same user
-selections.            44        40                       30                       0
+selections.|44|40|30|0|
 
-The main method
+|The main method
 of the BlockChain
 class is documented
 and describes
 behavior with
 difficulty levels
 of 4 and 5
-(see Javadoc)         4           3                        2                         0
+(see Javadoc)|4|3|2|0|
 
 Separation of
 concerns & good
