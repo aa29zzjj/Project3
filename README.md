@@ -47,6 +47,7 @@ the blockchain. As part of the submission of Task 0, you must turn in a
 screen shot such as the following:
 
 run:
+
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
@@ -54,6 +55,7 @@ run:
 4. Corrupt the chain.
 5. Hide the Corruption by repairing the chain.
 6. Exit
+
 0
 Current size of chain: 1
 Current hashes per second by this machine: 1846198
@@ -67,6 +69,7 @@ Chain hash: 00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 Chain verification: true
@@ -78,6 +81,7 @@ Total execution time required to verify the chain was 0 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2}
@@ -89,6 +93,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 1
 Enter difficulty > 0
 5
@@ -102,6 +107,7 @@ Total execution time to add this block was 28071 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 1
 Enter difficulty > 0
 5
@@ -115,6 +121,7 @@ Total execution time to add this block was 2066 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 1
 Enter difficulty > 0
 6
@@ -128,6 +135,7 @@ Total execution time to add this block was 47166 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 Chain verification: true
@@ -139,6 +147,7 @@ Total execution time required to verify the chain was 0 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
@@ -153,6 +162,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 0
 Current size of chain: 4
 Current hashes per second by this machine: 1946252
@@ -166,6 +176,7 @@ Chain hash: 000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 4
 Corrupt the Blockchain
 Enter block ID of block to Corrupt
@@ -180,6 +191,7 @@ Block 2 now holds Charlie pays Dave 3 USD
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
@@ -194,6 +206,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 ..Improper hash on node 2 Does not begin with 00000
@@ -206,6 +219,7 @@ Total execution time required to verify the chain was 0 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 5
 Repairing the entire chain
 Total execution time required to repair the chain was 26132 milliseconds
@@ -216,6 +230,7 @@ Total execution time required to repair the chain was 26132 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
@@ -230,6 +245,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 Chain verification: true
@@ -241,6 +257,7 @@ Total execution time required to verify the chain was 0 milliseconds
 4. Corrupt the chain.
 5. Hide the Corruption by recomputing hashes.
 6. Exit
+
 6
 
 **Task 0 Grading Rubric 50 Points**
@@ -252,7 +269,7 @@ A screen scrape
 is provided that
 shows the exact
 same user
-selections.            44        40                       30                        0
+selections.            44        40                       30                       0
 
 The main method
 of the BlockChain
