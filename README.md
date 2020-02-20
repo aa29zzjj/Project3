@@ -332,6 +332,11 @@ Total execution time required to verify the chain was 0 milliseconds
 
 **Task 0 Grading Rubric 50 Points**
 
+
+|header1|header2|header3|
+|-------|-------|-------|
+|0      | 1     | 2     |
+
 See the Javadoc for a description of the main routine and the difficulty levels.
 
 
