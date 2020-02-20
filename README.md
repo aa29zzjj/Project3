@@ -335,8 +335,10 @@ Total execution time required to verify the chain was 0 milliseconds
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
-|Screen scrape shows|44       | 40 | 30 | 0           |
+|Screenscrape shows |44       | 40 | 30 | 0           |
 |exact same execution|||||
+||||||
+|Blockchain main method well documented|||||
 
 
 
