@@ -336,9 +336,10 @@ See the Javadoc for a description of the main routine and the difficulty levels.
 
 
 
-| Excellent|Good - Minor problems|Poor - serious problems|No submission|
+| Excellent|Good but minor problems|Poor serious problems|No submission|
 
-|----------|---------------------|-----------------------|-------------|
+|----------|-----------------------|---------------------|-------------|
+
 
 |   0      |     1               |       2               |    3        |
 
