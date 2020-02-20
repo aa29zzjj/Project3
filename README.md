@@ -338,10 +338,12 @@ Total execution time required to verify the chain was 0 milliseconds
 |Screenscrape shows exact|44       | 40 | 30 | 0           |
 |same execution|||||
 ||||||
-|Blockchain main method well documented|4|3|2|0|
+|Blockchain main method well documented and|4|3|2|0|
 |describes behavior with difficulty levels of 4 and 5|||||
 ||||||
-
+|Separation of concerns and good style|1|0|0|0|
+||||||
+|Submission requirements met|1|0|0|0|
 
 See the Javadoc for a description of the main routine and the difficulty levels.
 
@@ -377,7 +379,7 @@ concerns & good
 style                 1           0                        0                         0
 
 Submission requirements
-met                   10                            0
+met                   1 0                            0
 
 
 
