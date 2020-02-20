@@ -3,6 +3,12 @@
 Assigned: Friday, February 21, 2020
 Due: Friday, Due Friday March 6, 11:59pm
 
+
+|Col 1|Col 2|
+|-----|-----|
+|  0  |  1  |
+
+
 **Principles**
 One of our primary objectives in this course is to make clear the fundamental
 distinction between functional and nonfunctional characteristics of distributed
