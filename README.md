@@ -4,11 +4,6 @@ Assigned: Friday, February 21, 2020
 Due: Friday, Due Friday March 6, 11:59pm
 
 
-|Col 1|Col 2|
-|-----|-----|
-|  0  |  1  |
-
-
 **Principles**
 One of our primary objectives in this course is to make clear the fundamental
 distinction between functional and nonfunctional characteristics of distributed
@@ -342,6 +337,9 @@ See the Javadoc for a description of the main routine and the difficulty levels.
 
 | Excellent|Good - Minor problems|Poor - serious problems|No submission|
 |----------|---------------------|-----------------------|-------------|
+|   0      |     1               |       2               |    3        |
+
+
 |Works.
 A screen scrape
 is provided that
