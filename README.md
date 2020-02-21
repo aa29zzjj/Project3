@@ -406,7 +406,7 @@ Project3Task0 Description
 
 Project3Task1 Description
 
-Each description folder contains either a single document (you may choose an appropriate name) with screenshots showing the execution of Task 0 and Task 2 or a link to a video showing your work. (If you upload your video to YouTube, make sure your video is selected as ‘unlisted’.)
+Each description folder contains either a single document (you may choose an appropriate name) with screenshots showing the execution of Task 0 and Task 1 or a link to a video showing your work. (If you upload your video to YouTube, make sure your video is selected as ‘unlisted’.)
 
 You should also have two zip files:
 Project3Task0.zip
