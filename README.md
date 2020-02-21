@@ -401,19 +401,19 @@ Be sure you have named your IntelliJ project folders correctly.
 For each IntelliJ project, File->Export Project->To Zip... each. You must export in this way and NOT just zip the IntelliJ project folders.
 
 **You should also have two description folders:**
-*Project3Task0 Description
-*Project3Task1 Description
+* Project3Task0 Description
+* Project3Task1 Description
 
 Each description folder contains either a single document (you may choose an appropriate name) with screenshots showing the execution of Task 0 and Task 1 or a link to a video showing your work. (If you upload your video to YouTube, make sure your video is selected as ‘unlisted’.)
 
 **You should also have two zip files:**
-*Project3Task0.zip
-*Project3Task1.zip
+* Project3Task0.zip
+* Project3Task1.zip
 
 Create a new empty folder named with your Andrew id (very important). Put all files mentioned above into this new folder. Zip that folder, and submit it to Canvas. The submission should be a single zip file. Now you should have only one zip file named with your Andrew id.
 
 **The file named YourAndrewID.zip contains:**
-*Project3Task0.zip
-*Project3Task1.zip
-*Project3Task0 Description (Folder)
-*Project3Task1 Description (Folder)
+* Project3Task0.zip
+* Project3Task1.zip
+* Project3Task0 Description (Folder)
+* Project3Task1 Description (Folder)
