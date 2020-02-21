@@ -1,7 +1,7 @@
 # 95-702 Distributed Systems For Information Systems Management
 # Project 3
 Assigned: Friday, February 21, 2020
-Due: Friday, Due Friday March 6, 11:59pm
+Due Friday March 6, 11:59pm
 
 
 **Principles**
@@ -32,10 +32,18 @@ the server will be  with JSON messages over TCP sockets. Thus, your work from
 Project2, Task 5 will be very useful and may be reused here.
 For each task below, you must submit screenshots that demonstrate your programs
 running. These screenshots will aid the grader in evaluating your project.
+
+Alternatively, you can create a screencast video of your working client and server.
+The video cannot be more than 3 minutes long. You may use an audio voiceover, but
+you do not need to. You should publish the video as 'Unlisted' to YouTube.
+(See more discussion on this in the Submission section below.) Include the URL
+of the YouTube video in a document in the Project3Task0 Description folder
+that you submit.
+
 Documenting code is also important. Be sure to provide comments in your code
 explaining what the code is doing and why. Be sure to separate concerns when
 appropriate. You may include the Javadoc comments (provided) in your own code.
-But do comment on any additions or modifications that you make.
+But you are required to comment on any additions or modifications that you make.
 
 **Task 0 Execution**
 Write a solution to Task 0 by studying the Javadoc provided on the course
@@ -45,7 +53,7 @@ almost exactly like the following interaction. You will select the exact
 same options and enter the exact same transactions. The only differences,
 of course, will be those due to the dynamic computations associated with
 the blockchain. As part of the submission of Task 0, you must turn in a
-screen shot such as the following:
+screenshot (or screencast) such as the following:
 
 run:
 
@@ -64,7 +72,6 @@ Current size of chain: 1
 Current hashes per second by this machine: 1846198
 
 Difficulty of most recent block: 2
-
 
 Nonce for most recent block: 1154
 
@@ -348,8 +355,6 @@ See the Javadoc for a description of the main routine and the difficulty levels.
 |Submission requirements met|1|0|0|0|
 
 
-
-
 **Task 1 Execution**
 
 The execution of Task 1 will appear exactly the same as in Task 0. The primary
@@ -383,25 +388,36 @@ Each JSON request message will include a signature.
 |Submission requirements met|1|0|0|0|
 
 
-
-
-
-
 **Project 3 Submission Requirements**
+
 Documentation of code is always required.
-Remember to separate concerns.
-The IntelliJ projects will be named as follows:
-* Project3Task0 (You need to zip this folder)
-* Project3Task1Server (You need to zip this folder)
-* Project3Task1Client (You need to zip this folder)
-You should also have two screen shot folders:
-* Project3Task0-screenshot (Do not zip)
-* Project3Task1-screenshot (Do not zip)
-   The submission should be a single zip file. This file will be called YourAndrewID.zip.
-Submission file structure:
-* YourAndrewID.zip
-* Project3Task0.zip
-* Project3Task0-screenshot
-* Project3Task1Server.zip
-* Project3Task1Client.zip
-* Project3Task1-screenshot
+
+Remember to separate concerns. Break your code up into chunks where each chink does one thing well.
+
+
+Video sharing rights: If you are creating screencast videos, then you should set the YouTube sharing rights 'Unlisted' when publishing to YouTube. There are three types of sharing rights on YouTube: Public, Private and Unlisted. You do not want other students to be able to see your video (that would be cheating), and ‘Unlisted’ restricts viewing to only those who have your URL.
+
+Be sure you have named your IntelliJ project folders correctly.  
+For each IntelliJ project, File->Export Project->To Zip... each. You must export in this way and NOT just zip the IntelliJ project folders.
+
+You should also have two description folders:
+
+Project3Task0 Description
+
+Project3Task1 Description
+
+Each description folder contains either a single document (you may choose an appropriate name) with screenshots showing the execution of Task 0 and Task 2 or a link to a video showing your work. (If you upload your video to YouTube, make sure your video is selected as ‘unlisted’.)
+
+You should also have two zip files:
+Project3Task0.zip
+Project3Task1.zip
+
+Create a new empty folder named with your Andrew id (very important). Put all files mentioned above into this new folder. Zip that folder, and submit it to Canvas. The submission should be a single zip file. Now you should have only one zip file named with your Andrew id.
+
+Submission File Structure:
+The file named YourAndrewID.zip contains:
+
+--- Project3Task0.zip
+--- Project3Task1.zip
+--- Project3Task0 Description (Folder)
+--- Project3Task1 Description (Folder)
