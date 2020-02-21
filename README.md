@@ -392,7 +392,7 @@ Each JSON request message will include a signature.
 
 Documentation of code is always required.
 
-Remember to separate concerns. Break your code up into chunks where each chink does one thing well.
+Remember to separate concerns. Break your code up into chunks where each chunk does one thing well.
 
 
 Video sharing rights: If you are creating screencast videos, then you should set the YouTube sharing rights 'Unlisted' when publishing to YouTube. There are three types of sharing rights on YouTube: Public, Private and Unlisted. You do not want other students to be able to see your video (that would be cheating), and ‘Unlisted’ restricts viewing to only those who have your URL.
