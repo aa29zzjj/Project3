@@ -1,5 +1,7 @@
 # 95-702 Distributed Systems For Information Systems Management
-# Project 3
+# Project 3 Spring 2020
+
+
 Assigned: Friday, February 21, 2020
 Due Friday March 6, 11:59pm
 
