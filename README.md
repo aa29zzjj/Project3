@@ -1,9 +1,9 @@
 # 95-702 Distributed Systems For Information Systems Management
-# Project 3 Spring 2020
+# Project 3 Fall 2020
 
 
-Assigned: Friday, February 21, 2020
-Due Friday March 6, 11:59pm
+Assigned: Friday, October 9, 2020
+Due Friday, October 23, 11:59pm
 
 
 **Principles**
@@ -16,7 +16,8 @@ tolerant? Is it reliable and secure?
 
 In this project, we will illustrate an important nonfunctional characteristic
 of blockchain technology - its tamper evident design. We will build a stand-alone
-blockchain and a remote client that interacts with a blockchain API.
+blockchain (Task 0) and a distributed system where a remote client interacts
+with a blockchain API (Task 1).
 The student should note that this is not all of blockchain. There is more to
 learn. Real blockchains include peer to peer communication and many replicas of
 the blockchain. The blocks themselves typically include Merkle Trees. This
