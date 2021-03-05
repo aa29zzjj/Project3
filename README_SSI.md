@@ -19,14 +19,29 @@ of blockchain technology - its tamper evident design. We will build a stand-alon
 blockchain (Task 0) and a distributed system where a remote client interacts
 with a blockchain API (Task 1).
 The student should note that this is not all of blockchain. There is more to
-learn. Real blockchains are decentralized and include peer to peer communication and many replicas of
-the blockchain. The blocks themselves typically include Merkle Trees. This
+learn. Real blockchains are decentralized and include peer to peer communication and many replicas of the blockchain. The blocks themselves typically include Merkle Trees. This
 assignment does not do all of that but it does provide a solid foundation to build on.
 
+One use case for blockchains is cryptocurrencies. Another use case is self-sovereign identity.
+In this project, we will explore the self-sovereign identity (SSI) use case.
+
+[For an overview of SSI, see this video.](https://www.youtube.com/watch?v=RllH91rcFdE)
+
+In this project we will store name-value pairs on our blockchain. The names will be decentralized identifiers (DID's). The associated value of each DID will be a public key.
+In the examples that follow, I created the RSA keys with 100 bit prime numbers. That is fine for this project, but larger keys would be appropriate in real life applications.
+
+The DID is generated from the public key. We will compute it by taking the rightmost 20 bytes of the hash of the public key.
+
+The RSA public key is the pair e and n, where e is the encryption exponent and n is the modulus. We can use the default value, e = 65537, and then use only the value of the modulus as our public key.
+
 **Overview**
+
 In Task 0, you will write a blockchain by carefully following the directions in
 Javadoc format found here:
+
 http://www.andrew.cmu.edu/course/95-702/examples/javadoc/index.html
+
+Note that the Javadoc describes writing "data" or a "transaction" to the blockchain. In this project, our "data" or "transaction" will be the name-value pair as described above and as shown in the example runs below.
 
 The Javadoc describes two classes that you need to write - Block.java and BlockChain.java.
 In Task 1, you will distribute the application that you created in Task 0. You
@@ -42,9 +57,10 @@ explaining what the code is doing and why. Be sure to separate concerns when
 appropriate. You may include the Javadoc comments (provided) in your own code.
 But you are required to comment on any additions or modifications that you make.
 
-Any code from external sources, e.g., stack overflow, must be cited with a URL.
+Any code from external sources, e.g., stack overflow, must be clearly cited with a URL.
 
-**Task 0 Execution**
+**Task 0 Execution**  
+
 Write a solution to Task 0 by studying the Javadoc provided on the course
 schedule. The logic found in Task 0 will be reused in Task 1.
 The execution of Task 0, a non-distributed stand-alone program, will look
