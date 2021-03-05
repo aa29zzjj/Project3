@@ -69,6 +69,7 @@ run:
 4. Currupt the chain.
 5. Hide the curruption by repairing the chain.
 6. Exit
+
 0
 
 Current size of chain: 1
