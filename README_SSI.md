@@ -60,6 +60,7 @@ of course, will be those due to the dynamic computations associated with
 the blockchain. As part of the submission of Task 0, you must turn in a
 screenshot (or screencast) such as the following:
 
+```
 run:
 
 0. View basic blockchain status.
@@ -252,6 +253,7 @@ Total execution time required to verify the chain was 1 milliseconds
 6
 
 Process finished with exit code 0
+```
 
 **Task 0 Grading Rubric 50 Points**
 
