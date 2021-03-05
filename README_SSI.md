@@ -34,14 +34,8 @@ will write a client server application. The interaction between the client and
 the server will be  with JSON messages over TCP sockets. Thus, your work from
 Project2, Task 5 will be very useful and may be reused here.
 For each task below, you must submit screenshots that demonstrate your programs
-running. These screenshots will aid the grader in evaluating your project.
+running. These screenshots will aid the grader in evaluating your project. See below for a discussion of how to submit a video instead of a screen shot.
 
-Alternatively, you can create a screencast video of your working client and server.
-The video cannot be more than 3 minutes long. You may use an audio voiceover, but
-you do not need to. You should publish the video as 'Unlisted' to YouTube.
-(See more discussion on this in the Submission section below.) Include the URL
-of the YouTube video in a document in the Project3Task0 Description folder
-that you submit.
 
 Documenting code is also important. Be sure to provide comments in your code
 explaining what the code is doing and why. Be sure to separate concerns when
@@ -313,6 +307,8 @@ the private key as was done in Project 2, Task 5. The signature must be checked
 on the server. If the signature fails to verify, send an appropriate error message
 back to the client.
 
+In a real blockchain implementation, the client would need to sign requests so that its account could be charged. In our example, the requests are requests to register public key and decentralized identifier pairs.
+
 You are required to design two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server.
 Each JSON request message will include a signature. You need not sign the response to the client.
@@ -341,6 +337,11 @@ Documentation of code is always required.
 
 Remember to separate concerns. Break your code up into chunks where each chunk does one thing well.
 
+As an alternative to screenshots, you can create a screencast video of your working client and server. The video cannot be more than 3 minutes long. You may use an audio voiceover, but
+you do not need to. You should publish the video as 'Unlisted' to YouTube.
+(See more discussion on this in the Submission section below.) Include the URL
+of the YouTube video in a document in the Project3Task0 Description folder
+that you submit.
 
 Video sharing rights: If you are creating screencast videos, then you should set the YouTube sharing rights 'Unlisted' when publishing to YouTube. There are three types of sharing rights on YouTube: Public, Private and Unlisted. You do not want other students to be able to see your video (that would be cheating), and ‘Unlisted’ restricts viewing to only those who have your URL.
 
