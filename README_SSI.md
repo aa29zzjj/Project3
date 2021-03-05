@@ -86,9 +86,10 @@ Chain hash: 003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910
 4. Corrupt the chain.  
 5. Hide the curruption by recomputing hashes.  
 6. Exit  
+
 2
-Verifying entire chain
-Chain verification: true
+Verifying entire chain  
+Chain verification: true  
 Total execution time required to verify the chain was 2 milliseconds
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
@@ -97,10 +98,13 @@ Total execution time required to verify the chain was 2 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
+
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 11:22:42.437","Tx ": "Genesis","PrevHash" : "","nonce" : 326,"difficulty": 2}
  ], "chainHash":"003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910"}
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -116,6 +120,7 @@ Enter RSA modulus (public key)
 Public key: 977956222077584463804707148622512536126402477068218093398419
 Decentralized Identifier(DID): 1e1e86a6a568e9ae9a9f88826add7fed9be2a94e
 Addding 977956222077584463804707148622512536126402477068218093398419,1e1e86a6a568e9ae9a9f88826add7fed9be2a94e to blockchain
+
 Total execution time to add this block was 1477 milliseconds
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
@@ -124,6 +129,7 @@ Total execution time to add this block was 1477 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 1
 Enter difficulty > 0
 4
@@ -132,7 +138,9 @@ Enter RSA modulus (public key)
 Public key: 899971062532794907400701863056137027042839592731743635662461
 Decentralized Identifier(DID): 252b50d942c505365aca474a9078e63a25b87c27
 Addding 899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27 to blockchain
+
 Total execution time to add this block was 1164 milliseconds
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -140,10 +148,12 @@ Total execution time to add this block was 1164 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 Chain verification: true
 Total execution time required to verify the chain was 1 milliseconds
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -151,12 +161,14 @@ Total execution time required to verify the chain was 1 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 11:22:42.437","Tx ": "Genesis","PrevHash" : "","nonce" : 326,"difficulty": 2},
 {"index" : 1,"time stamp " : "2021-03-05 11:23:43.349","Tx ": "977956222077584463804707148622512536126402477068218093398419,1e1e86a6a568e9ae9a9f88826add7fed9be2a94e","PrevHash" : "003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910","nonce" : 52979,"difficulty": 4},
 {"index" : 2,"time stamp " : "2021-03-05 11:25:27.613","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "000061D2E1816162060C71390A96C6AE41D6AED5E336547B8C614AE9F2931EA4","nonce" : 48646,"difficulty": 4}
  ], "chainHash":"000039DE6998EF238B22B74BAC37CC4E0D41B7D398976358B5DAAB28C4C64EA2"}
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -164,12 +176,14 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 0
 Current size of chain: 3
 Current hashes per second by this machine: 920262
 Difficulty of most recent block: 4
 Nonce for most recent block: 48646
 Chain hash: 000039DE6998EF238B22B74BAC37CC4E0D41B7D398976358B5DAAB28C4C64EA2
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -177,13 +191,16 @@ Chain hash: 000039DE6998EF238B22B74BAC37CC4E0D41B7D398976358B5DAAB28C4C64EA2
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 4
 Currupt the Blockchain
 Enter block ID of block to currupt
 1
 Enter new data for block 1
 879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27
+
 Block 1 now holds 879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -191,12 +208,14 @@ Block 1 now holds 879971062532794907400701863056137027042839592731743635662461,2
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 11:22:42.437","Tx ": "Genesis","PrevHash" : "","nonce" : 326,"difficulty": 2},
 {"index" : 1,"time stamp " : "2021-03-05 11:23:43.349","Tx ": "879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910","nonce" : 52979,"difficulty": 4},
 {"index" : 2,"time stamp " : "2021-03-05 11:25:27.613","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "000061D2E1816162060C71390A96C6AE41D6AED5E336547B8C614AE9F2931EA4","nonce" : 48646,"difficulty": 4}
  ], "chainHash":"000039DE6998EF238B22B74BAC37CC4E0D41B7D398976358B5DAAB28C4C64EA2"}
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -204,6 +223,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 ..Improper hash on node 1 Does not begin with 0000
@@ -216,6 +236,7 @@ Total execution time required to verify the chain was 1 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 5
 Repairing the entire chain
 Total execution time required to repair the chain was 8397 milliseconds
@@ -226,12 +247,14 @@ Total execution time required to repair the chain was 8397 milliseconds
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 11:22:42.437","Tx ": "Genesis","PrevHash" : "","nonce" : 326,"difficulty": 2},
 {"index" : 1,"time stamp " : "2021-03-05 11:23:43.349","Tx ": "879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910","nonce" : 170023,"difficulty": 4},
 {"index" : 2,"time stamp " : "2021-03-05 11:25:27.613","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "0000F4E30641FDF58E3E3273FB2164A91CABDAA05B2342230436C2CC2DFEB5F1","nonce" : 179755,"difficulty": 4}
  ], "chainHash":"0000ED7D5270EDFA9EC76DBB3AF3E52D618D50B399CFBC5B5700416AEE896461"}
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -239,6 +262,7 @@ View the Blockchain
 4. Corrupt the chain.
 5. Hide the curruption by recomputing hashes.
 6. Exit
+
 2
 Verifying entire chain
 Chain verification: true
