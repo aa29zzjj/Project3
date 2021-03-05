@@ -78,13 +78,13 @@ Difficulty of most recent block: 2
 Nonce for most recent block: 326  
 Chain hash: 003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910  
 
-0. View basic blockchain status.
-1. Add a public key to the blockchain.
-2. Verify the blockchain.
-3. View the blockchain.
-4. Corrupt the chain.
-5. Hide the curruption by recomputing hashes.
-6. Exit
+0. View basic blockchain status.  
+1. Add a public key to the blockchain.  
+2. Verify the blockchain.  
+3. View the blockchain.  
+4. Corrupt the chain.  
+5. Hide the curruption by recomputing hashes.  
+6. Exit  
 2
 Verifying entire chain
 Chain verification: true
