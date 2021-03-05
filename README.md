@@ -1,9 +1,9 @@
 # 95-702 Distributed Systems For Information Systems Management
-# Project 3 Fall 2020
+# Project 3 Spring 2021
 
 
-Assigned: Friday, October 9, 2020
-Due Friday, October 23, 11:59pm
+Assigned: Friday, March 5, 2021
+Due Friday, March 19, 11:59pm
 
 
 **Principles**
@@ -19,14 +19,29 @@ of blockchain technology - its tamper evident design. We will build a stand-alon
 blockchain (Task 0) and a distributed system where a remote client interacts
 with a blockchain API (Task 1).
 The student should note that this is not all of blockchain. There is more to
-learn. Real blockchains include peer to peer communication and many replicas of
-the blockchain. The blocks themselves typically include Merkle Trees. This
-assignment will certainly provide a nice foundation to build on.
+learn. Real blockchains are decentralized and include peer to peer communication and many replicas of the blockchain. The blocks themselves typically include Merkle Trees. This
+assignment does not do all of that but it does provide a solid foundation to build on.
+
+One use case for blockchains is cryptocurrencies. Another use case is self-sovereign identity.
+In this project, we will explore the self-sovereign identity (SSI) use case.
+
+[For an overview of SSI, see this video.](https://www.youtube.com/watch?v=RllH91rcFdE)
+
+In this project we will store name-value pairs on our blockchain. The names will be decentralized identifiers (DID's). The associated value of each DID will be a public key.
+In the examples that follow, I created the RSA keys with 100 bit prime numbers. That is fine for this project, but larger keys would be appropriate in real life applications.
+
+The DID is generated from the public key. We will compute it by taking the rightmost 20 bytes of the hash of the public key.
+
+The RSA public key is the pair e and n, where e is the encryption exponent and n is the modulus. We can use the default value, e = 65537, and then use only the value of the modulus as our public key.
 
 **Overview**
+
 In Task 0, you will write a blockchain by carefully following the directions in
 Javadoc format found here:
+
 http://www.andrew.cmu.edu/course/95-702/examples/javadoc/index.html
+
+Note that the Javadoc describes writing "data" or a "transaction" to the blockchain. In this project, our "data" or "transaction" will be the name-value pair as described above and as shown in the example runs below.
 
 The Javadoc describes two classes that you need to write - Block.java and BlockChain.java.
 In Task 1, you will distribute the application that you created in Task 0. You
@@ -34,21 +49,18 @@ will write a client server application. The interaction between the client and
 the server will be  with JSON messages over TCP sockets. Thus, your work from
 Project2, Task 5 will be very useful and may be reused here.
 For each task below, you must submit screenshots that demonstrate your programs
-running. These screenshots will aid the grader in evaluating your project.
+running. These screenshots will aid the grader in evaluating your project. See below for a discussion of how to submit a video instead of a screen shot.
 
-Alternatively, you can create a screencast video of your working client and server.
-The video cannot be more than 3 minutes long. You may use an audio voiceover, but
-you do not need to. You should publish the video as 'Unlisted' to YouTube.
-(See more discussion on this in the Submission section below.) Include the URL
-of the YouTube video in a document in the Project3Task0 Description folder
-that you submit.
 
 Documenting code is also important. Be sure to provide comments in your code
 explaining what the code is doing and why. Be sure to separate concerns when
 appropriate. You may include the Javadoc comments (provided) in your own code.
 But you are required to comment on any additions or modifications that you make.
 
-**Task 0 Execution**
+Any code from external sources, e.g., stack overflow, must be clearly cited with a URL.
+
+**Task 0 Execution**  
+
 Write a solution to Task 0 by studying the Javadoc provided on the course
 schedule. The logic found in Task 0 will be reused in Task 1.
 The execution of Task 0, a non-distributed stand-alone program, will look
@@ -58,287 +70,229 @@ of course, will be those due to the dynamic computations associated with
 the blockchain. As part of the submission of Task 0, you must turn in a
 screenshot (or screencast) such as the following:
 
+```
 run:
-
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
-4. Corrupt the chain.
-5. Hide the Corruption by repairing the chain.
+4. Currupt the chain.
+5. Hide the curruption by repairing the chain.
 6. Exit
 
 0
-
+Blockchain status
 Current size of chain: 1
-
-Current hashes per second by this machine: 1846198
-
+Current hashes per second by this machine: 1293553
 Difficulty of most recent block: 2
-
-Nonce for most recent block: 1154
-
-Chain hash: 00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8
+Nonce for most recent block: 436
+Chain hash: 0008ABB5C043AF33AF40C857DBF7C5F89FED3A11DD91098C18766402E2E92339
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 2
-
 Verifying entire chain
-
 Chain verification: true
-
-Total execution time required to verify the chain was 0 milliseconds
+Total execution time required to verify the chain was 2 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 3
-
 View the Blockchain
-```
-{"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2}
- ], "chainHash":"00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8"}
-```
+{"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 12:09:03.33","Tx ": "Genesis","PrevHash" : "","nonce" : 436,"difficulty": 2}
+ ], "chainHash":"0008ABB5C043AF33AF40C857DBF7C5F89FED3A11DD91098C18766402E2E92339"}
+
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 1
+Add public key and decentralized identifier to the chain
+Enter difficulty > 0 of this block
+4
+Enter RSA modulus (public key) in base 10.
+977956222077584463804707148622512536126402477068218093398419
+Public key: 977956222077584463804707148622512536126402477068218093398419
+This is the computed decentralized identifier(DID): 1e1e86a6a568e9ae9a9f88826add7fed9be2a94e
+Addding 977956222077584463804707148622512536126402477068218093398419,1e1e86a6a568e9ae9a9f88826add7fed9be2a94e to blockchain
+Total execution time to add this block was 2129 milliseconds
 
-Enter difficulty > 0
+0. View basic blockchain status.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
+2. Verify the blockchain.
+3. View the blockchain.
+4. Corrupt the chain.
+5. Hide the curruption by recomputing hashes.
+6. Exit
 
+1
+Add public key and decentralized identifier to the chain
+Enter difficulty > 0 of this block
 5
-
-Enter transaction
-
-Alice pays Bob 100 USD
-
-Total execution time to add this block was 28071 milliseconds
+Enter RSA modulus (public key) in base 10.
+899971062532794907400701863056137027042839592731743635662461
+Public key: 899971062532794907400701863056137027042839592731743635662461
+This is the computed decentralized identifier(DID): 252b50d942c505365aca474a9078e63a25b87c27
+Addding 899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27 to blockchain
+Total execution time to add this block was 26846 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
-6. Exit
-
-1
-
-Enter difficulty > 0
-
-5
-
-Enter transaction
-
-Bob pays Eve 50 USD
-
-Total execution time to add this block was 2066 milliseconds
-
-0. View basic blockchain status.
-1. Add a transaction to the blockchain.
-2. Verify the blockchain.
-3. View the blockchain.
-4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
-6. Exit
-
-1
-
-Enter difficulty > 0
-
-6
-
-Enter transaction
-
-Eve pays Charlie 10 USD
-
-Total execution time to add this block was 47166 milliseconds
-
-0. View basic blockchain status.
-1. Add a transaction to the blockchain.
-2. Verify the blockchain.
-3. View the blockchain.
-4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 2
-
 Verifying entire chain
-
 Chain verification: true
-
-Total execution time required to verify the chain was 0 milliseconds
+Total execution time required to verify the chain was 2 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 3
-
 View the Blockchain
-```
-{"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
-{"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
-{"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Bob pays Eve 50 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 107856,"difficulty": 5},
-{"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "0000017BA1238C419C992654EAFC5417F1BDBAF2FECFCF44328B0CCD777EDBF4","nonce" : 2475995,"difficulty": 6}
- ], "chainHash":"000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF"}
-```
+{"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 12:09:03.33","Tx ": "Genesis","PrevHash" : "","nonce" : 436,"difficulty": 2},
+{"index" : 1,"time stamp " : "2021-03-05 12:11:24.823","Tx ": "977956222077584463804707148622512536126402477068218093398419,1e1e86a6a568e9ae9a9f88826add7fed9be2a94e","PrevHash" : "0008ABB5C043AF33AF40C857DBF7C5F89FED3A11DD91098C18766402E2E92339","nonce" : 83931,"difficulty": 4},
+{"index" : 2,"time stamp " : "2021-03-05 12:12:27.17","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "0000E6A879759886F39E8BEB6418EED2E925234F9B77F4A9CC38E1BA27119DEC","nonce" : 1074318,"difficulty": 5}
+ ], "chainHash":"00000215B4FC2171AC849CFCE00C178C42533E02A3D6DA5402EF763B0E08D4CB"}
+
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 0
-
-Current size of chain: 4
-
-Current hashes per second by this machine: 1946252
-
-Difficulty of most recent block: 6
-
-Nonce for most recent block: 2475995
-
-Chain hash: 000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF
+Blockchain status
+Current size of chain: 3
+Current hashes per second by this machine: 1982551
+Difficulty of most recent block: 5
+Nonce for most recent block: 1074318
+Chain hash: 00000215B4FC2171AC849CFCE00C178C42533E02A3D6DA5402EF763B0E08D4CB
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 4
-
-Corrupt the Blockchain
-
-Enter block ID of block to Corrupt
-2
-
-Enter new data for block 2
-
-Charlie pays Dave 3 USD
-
-Block 2 now holds Charlie pays Dave 3 USD
+Currupt the Blockchain
+Enter block ID of block to currupt
+1
+Enter new data for block 1
+Enter new public key followed by a comma followed by a new DID
+879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27
+Block 1 now holds 879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 3
-
 View the Blockchain
-```
-{"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
-{"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
-{"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Charlie pays Dave 3 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 107856,"difficulty": 5},
-{"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "0000017BA1238C419C992654EAFC5417F1BDBAF2FECFCF44328B0CCD777EDBF4","nonce" : 2475995,"difficulty": 6}
- ], "chainHash":"000000B2594B8EE49149604B87835990E6EF36C2371768A13A36B2F1EE2EF3EF"}
-```
+{"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 12:09:03.33","Tx ": "Genesis","PrevHash" : "","nonce" : 436,"difficulty": 2},
+{"index" : 1,"time stamp " : "2021-03-05 12:11:24.823","Tx ": "879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "0008ABB5C043AF33AF40C857DBF7C5F89FED3A11DD91098C18766402E2E92339","nonce" : 83931,"difficulty": 4},
+{"index" : 2,"time stamp " : "2021-03-05 12:12:27.17","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "0000E6A879759886F39E8BEB6418EED2E925234F9B77F4A9CC38E1BA27119DEC","nonce" : 1074318,"difficulty": 5}
+ ], "chainHash":"00000215B4FC2171AC849CFCE00C178C42533E02A3D6DA5402EF763B0E08D4CB"}
+
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 2
-
 Verifying entire chain
-
-..Improper hash on node 2 Does not begin with 00000
-
+..Improper hash on node 1 Does not begin with 0000
 Chain verification: false
-
-Total execution time required to verify the chain was 0 milliseconds
+Total execution time required to verify the chain was 1 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 5
-
 Repairing the entire chain
-
-Total execution time required to repair the chain was 26132 milliseconds
+Total execution time required to repair the chain was 4980 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 3
-
 View the Blockchain
-```
-{"ds_chain" : [ {"index" : 0,"time stamp " : "2019-02-22 17:22:14.133","Tx ": "Genesis","PrevHash" : "","nonce" : 1154,"difficulty": 2},
-{"index" : 1,"time stamp " : "2019-02-22 17:27:21.442","Tx ": "Alice pays Bob 100 USD","PrevHash" : "00BC4767DC821A3F4B64B42017228734251FF1C0FF70EDDF9A66DC2C1AC7EFD8","nonce" : 1457348,"difficulty": 5},
-{"index" : 2,"time stamp " : "2019-02-22 17:28:27.419","Tx ": "Charlie pays Dave 3 USD","PrevHash" : "0000097BCBDF5146BAA13491D52B32946BE9ED8A7F0262EBC47A9AA7213E85F7","nonce" : 441725,"difficulty": 5},
-{"index" : 3,"time stamp " : "2019-02-22 17:29:16.839","Tx ": "Eve pays Charlie 10 USD","PrevHash" : "00000B1C711B1D81B7724D0FC11C3D2AC51345E505B4CF72121D246519C20101","nonce" : 852425,"difficulty": 6}
- ], "chainHash":"000000D44CB102756678DBE10C321D2A93F9FCA9A8FE370FF888C18CAF7C11D0"}
-```
+{"ds_chain" : [ {"index" : 0,"time stamp " : "2021-03-05 12:09:03.33","Tx ": "Genesis","PrevHash" : "","nonce" : 436,"difficulty": 2},
+{"index" : 1,"time stamp " : "2021-03-05 12:11:24.823","Tx ": "879971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "0008ABB5C043AF33AF40C857DBF7C5F89FED3A11DD91098C18766402E2E92339","nonce" : 33552,"difficulty": 4},
+{"index" : 2,"time stamp " : "2021-03-05 12:12:27.17","Tx ": "899971062532794907400701863056137027042839592731743635662461,252b50d942c505365aca474a9078e63a25b87c27","PrevHash" : "000027659C23D3D7EE662052C523984B43B2CC582DE066D8C6A63FA8C6CBE724","nonce" : 164510,"difficulty": 5}
+ ], "chainHash":"000001A46DBA5F946C80B777AF41C74F1E8DF0F519B42D4F3AB406E761CC885F"}
+
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
 
 2
-
 Verifying entire chain
-
 Chain verification: true
-
 Total execution time required to verify the chain was 0 milliseconds
 
 0. View basic blockchain status.
-1. Add a transaction to the blockchain.
+1. Add a public key (RSA modulus) and DID to the blockchain. The DID is not entered but will be computed.
 2. Verify the blockchain.
 3. View the blockchain.
 4. Corrupt the chain.
-5. Hide the Corruption by recomputing hashes.
+5. Hide the curruption by recomputing hashes.
 6. Exit
-
 6
+
+Process finished with exit code 0
+```
 
 **Task 0 Grading Rubric 50 Points**
 
@@ -347,13 +301,13 @@ See the Javadoc for a description of the main routine and the difficulty levels.
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
-|Screenscrape shows exact|44       | 40 | 30 | 0           |
+|Screenscrape shows exact|40       | 35 | 30 | 0           |
 |same execution|||||
 ||||||
 |Blockchain main method well documented and|4|3|2|0|
 |describes behavior with difficulty levels of 4 and 5|||||
 ||||||
-|Separation of concerns and good style|1|0|0|0|
+|Separation of concerns and good style|5|4|2|0|
 ||||||
 |Submission requirements met|1|0|0|0|
 
@@ -369,9 +323,11 @@ the private key as was done in Project 2, Task 5. The signature must be checked
 on the server. If the signature fails to verify, send an appropriate error message
 back to the client.
 
+In a real blockchain implementation, the client would need to sign requests so that its account could be charged. In our example, the requests are requests to register public key and decentralized identifier pairs.
+
 You are required to design two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server.
-Each JSON request message will include a signature.
+Each JSON request message will include a signature. You need not sign the response to the client.
 
 
 **Task 1 Grading Rubric 50 Points**
@@ -380,13 +336,13 @@ Each JSON request message will include a signature.
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
-|Screenscrape shows client server and|40       | 36 | 30 | 0           |
+|Screenscrape shows client server and|35       | 30 | 25 | 0           |
 |exact same execution as Task 0|||||
 ||||||
 |Request response JSON message format designed well|4|3|2|0|
 ||||||
 |Server verifies ID and signature on each request|4|3|2|1|
-|Separation of concerns and good style|1|0|0|0|
+|Separation of concerns and good style|6|5|3|0|
 ||||||
 |Submission requirements met|1|0|0|0|
 
@@ -397,6 +353,11 @@ Documentation of code is always required.
 
 Remember to separate concerns. Break your code up into chunks where each chunk does one thing well.
 
+As an alternative to screenshots, you can create a screencast video of your working client and server. The video cannot be more than 3 minutes long. You may use an audio voiceover, but
+you do not need to. You should publish the video as 'Unlisted' to YouTube.
+(See more discussion on this in the Submission section below.) Include the URL
+of the YouTube video in a document in the Project3Task0 Description folder
+that you submit.
 
 Video sharing rights: If you are creating screencast videos, then you should set the YouTube sharing rights 'Unlisted' when publishing to YouTube. There are three types of sharing rights on YouTube: Public, Private and Unlisted. You do not want other students to be able to see your video (that would be cheating), and ‘Unlisted’ restricts viewing to only those who have your URL.
 
