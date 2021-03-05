@@ -65,7 +65,7 @@ Write a solution to Task 0 by studying the Javadoc provided on the course
 schedule. The logic found in Task 0 will be reused in Task 1.
 The execution of Task 0, a non-distributed stand-alone program, will look
 almost exactly like the following interaction. You will select the exact
-same options and enter the exact same transactions. The only differences,
+same options and enter the exact same name-value pairs. The only differences,
 of course, will be those due to the dynamic computations associated with
 the blockchain. As part of the submission of Task 0, you must turn in a
 screenshot (or screencast) such as the following:
