@@ -301,13 +301,13 @@ See the Javadoc for a description of the main routine and the difficulty levels.
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
-|Screenscrape shows exact|44       | 40 | 30 | 0           |
+|Screenscrape shows exact|40       | 35 | 30 | 0           |
 |same execution|||||
 ||||||
 |Blockchain main method well documented and|4|3|2|0|
 |describes behavior with difficulty levels of 4 and 5|||||
 ||||||
-|Separation of concerns and good style|1|0|0|0|
+|Separation of concerns and good style|5|4|2|0|
 ||||||
 |Submission requirements met|1|0|0|0|
 
@@ -336,13 +336,13 @@ Each JSON request message will include a signature. You need not sign the respon
 
 |                   |Excellent|Good|Poor|No submission|
 |-------------------|---------|----|----|-------------|
-|Screenscrape shows client server and|40       | 36 | 30 | 0           |
+|Screenscrape shows client server and|35       | 30 | 25 | 0           |
 |exact same execution as Task 0|||||
 ||||||
 |Request response JSON message format designed well|4|3|2|0|
 ||||||
 |Server verifies ID and signature on each request|4|3|2|1|
-|Separation of concerns and good style|1|0|0|0|
+|Separation of concerns and good style|6|5|3|0|
 ||||||
 |Submission requirements met|1|0|0|0|
 
