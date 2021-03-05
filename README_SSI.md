@@ -61,6 +61,7 @@ the blockchain. As part of the submission of Task 0, you must turn in a
 screenshot (or screencast) such as the following:
 
 run:
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
@@ -69,11 +70,13 @@ run:
 5. Hide the curruption by repairing the chain.
 6. Exit
 0
+
 Current size of chain: 1
 Current hashes per second by this machine: 885873
 Difficulty of most recent block: 2
 Nonce for most recent block: 326
 Chain hash: 003A1CDB1FED878153583435C6E74CB4C9884E61F872F49A5FBB1BD9382BF910
+
 0. View basic blockchain status.
 1. Add a public key to the blockchain.
 2. Verify the blockchain.
