@@ -42,11 +42,12 @@ Be sure to separate concerns when appropriate.
 
 Be sure to include comments within your methods.
 
-Any code from external sources, e.g., stack overflow, must be clearly cited with a URL.
+Any code from external sources, e.g., stack overflow, **must be clearly cited with a URL**.
 
 ### Task 0  
 
-Write a solution to Task 0 by studying the Javadoc provided on the course schedule (Block.java and BlockChain.java). The logic found in Task 0 will be reused in Task 1.
+Write a solution to Task 0 by studying the Javadoc provided (Block.java and BlockChain.java). The logic found in Task 0 will be reused in Task 1.
+
 The execution of Task 0, a non-distributed stand-alone program, will look like the following interaction. As part of the submission of Task 0, you must turn in a screenshot similar to the one below.
 
 Label this screenshot "Task 0 Execution" on your PDF. Of course, your code - not mine - will generate the screen shot.
