@@ -382,7 +382,7 @@ Rubric:
 
 ### Task 1
 
-The execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets.
+The execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets. The blockchain will exist on the server. It will be constructed there and the client will make requests for operations over a TCP socket. The client will be focused on driving the menu driven interaction and communicating with the server on the backend.
 
 You are required to design and use two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server.
