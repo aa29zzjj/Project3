@@ -52,7 +52,7 @@ Write a solution to Task 0 by studying the Javadoc provided (Block.java and Bloc
 
 The execution of Task 0, a non-distributed stand-alone program, will look like the following interaction. As part of the submission of Task 0, you must turn in a screenshot similar to the one below.
 
-Label this screenshot ***Task 0 Execution*** on your PDF. Of course, your code - not mine - will generate the screen shot.
+Label this first section ***Task 0 Execution*** in your PDF. Of course, your code - not mine - will generate the screen shot.
 
 In addition, wherever the name Alice is used, replace "Alice" with your name.
 
@@ -362,10 +362,10 @@ Process finished with exit code 0
 
 
 ```
-Label this section **Task 0 Block.java** and include a complete listing of Block.java
+Label this second section **Task 0 Block.java** and include a complete listing of Block.java
 
 
-Label this section **Task 0 BlockChain.java** and include a complete listing of BlockChain.java
+Label this third section **Task 0 BlockChain.java** and include a complete listing of BlockChain.java
 
 See the Javadoc's main routine. You are asked to experiment and provide some timing data and analysis. That commentary should be present in the comments of your main routine.
 
