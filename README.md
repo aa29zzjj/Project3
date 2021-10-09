@@ -423,7 +423,7 @@ And a single pdf named Project3.pdf.
 
 Create a new empty folder named with your Andrew id (very important). Put the three files above into this new folder. Zip that folder, and submit it to Canvas.
 
-**The file named YourAndrewID.zip contains:**
+**The file named YourAndrewID.zip contains two zips and a pdf:**
 * Project3Task0.zip
 * Project3Task1.zip
 * Project3.pdf
