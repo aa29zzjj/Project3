@@ -42,6 +42,8 @@ Be sure to separate concerns when appropriate.
 
 Be sure to include comments within your methods.
 
+Data validation (of user input) is very important but we are not doing that here.
+
 Any code from external sources, e.g., stack overflow, **must be clearly cited with a URL**.
 
 ### Task 0  
