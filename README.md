@@ -380,6 +380,8 @@ Rubric:
 4. The code illustrates separation of concerns and good style: 5 points.
 5. The single PDF file includes sections correctly labelled: 5 Points.  
 
+-----
+
 ## Task 1
 
 The execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets. The blockchain will exist on the server. It will be constructed there and the client will make requests for operations over a TCP socket. The client will be focused on driving the menu driven interaction and communicating with the server on the backend.
@@ -413,7 +415,7 @@ Rubric:
 4. Separation of concerns is well done: 5 points.
 5. The single PDF file includes sections correctly labelled: 5 Points.
 
-
+-----
 
 **Project 3 Submission Requirements**
 
