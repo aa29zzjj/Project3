@@ -378,7 +378,7 @@ Rubric:
 2. The code is well documented: 5 points.
 3. The analysis in the main routine is detailed and clear: 5 Points.
 4. The code illustrates separation of concerns and good style: 5 points.
-5. The single PDF file includes a labelled screen scrape of the execution and labelled Java source code. 5 Points  
+5. The single PDF file includes sections correctly labelled: 5 Points.  
 
 ### Task 1
 
@@ -405,7 +405,8 @@ Rubric:
 2. The JSON message being sent to the server is well designed: 5 Points
 3. The JSON message being sent from the server to the client is well designed: 5 Points.
 4. Separation of concerns is well done: 5 points.
-5. The single PDF file includes a labelled screen scrape of the execution and labelled Java source code: 5 Points  
+5. The single PDF file includes sections correctly labelled: 5 Points.
+
 
 
 **Project 3 Submission Requirements**
