@@ -63,7 +63,7 @@ In addition, wherever the name Alice is used, replace "Alice" with your name.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 0
