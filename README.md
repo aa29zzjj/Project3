@@ -46,7 +46,7 @@ Data validation (of user input) is very important but we are not doing that here
 
 Any code from external sources, e.g., stack overflow, **must be clearly cited with a URL**.
 
-### Task 0  
+## Task 0  
 
 Write a solution to Task 0 by studying the Javadoc provided (Block.java and BlockChain.java). The logic found in Task 0 will be reused in Task 1.
 
@@ -380,7 +380,7 @@ Rubric:
 4. The code illustrates separation of concerns and good style: 5 points.
 5. The single PDF file includes sections correctly labelled: 5 Points.  
 
-### Task 1
+## Task 1
 
 The execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets. The blockchain will exist on the server. It will be constructed there and the client will make requests for operations over a TCP socket. The client will be focused on driving the menu driven interaction and communicating with the server on the backend.
 
