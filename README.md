@@ -371,7 +371,7 @@ See the Javadoc's main routine. You are asked to experiment and provide some tim
 
 ----
 
-###Task 0 Grading Rubric 50 Points
+### Task 0 Grading Rubric 50 Points
 
 Rubric:
 The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced): 30 points.
