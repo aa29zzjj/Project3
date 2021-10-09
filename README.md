@@ -365,7 +365,7 @@ Label this section **Task 0 Block.java** and include a complete listing of Block
 
 Label this section **Task 0 BlockChain.java** and include a complete listing of BlockChain.java
 
-See the Javadoc's main routine. You are asked to experiment and provide some timing data. Label this section **Task 0 Timing discussion**.
+See the Javadoc's main routine. You are asked to experiment and provide some timing data and analysis. That commentary should be present in the comments of your main routine.
 
 ----
 
@@ -374,9 +374,9 @@ See the Javadoc's main routine. You are asked to experiment and provide some tim
 Rubric:
 The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced): 30 points.
 The code is well documented: 5 points.
-Separation of concerns is well done: 5 points.
-The program illustrates good programming style: 5 Points
-The single PDF file includes a labelled screen scrape of the execution and labelled Java source code and labelled timing discussion: 5 Points  
+The analysis in the main routine is detailed and clear: 5 Points.
+The code illustrates separation of concerns and good style: 5 points.
+The single PDF file includes a labelled screen scrape of the execution and labelled Java source code. 5 Points  
 
 ### Task 1
 
