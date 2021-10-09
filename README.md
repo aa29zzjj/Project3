@@ -391,9 +391,15 @@ Use the following three labels in your single PDF:
 
 **Task 1 Execution**
 
-**Task 1 Client Source Code***
+Include a screenshot of the interaction as above in Task 0.
+
+**Task 1 Client Source Code**
+
+Include all client side source code clearly labelled.
 
 **Task 1 Server Source Code**
+
+Include all server side source code clearly labelled.
 
  -------
 
