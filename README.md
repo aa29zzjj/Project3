@@ -374,11 +374,11 @@ See the Javadoc's main routine. You are asked to experiment and provide some tim
 ### Task 0 Grading Rubric 50 Points
 
 Rubric:
-The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced): 30 points.
-The code is well documented: 5 points.
-The analysis in the main routine is detailed and clear: 5 Points.
-The code illustrates separation of concerns and good style: 5 points.
-The single PDF file includes a labelled screen scrape of the execution and labelled Java source code. 5 Points  
+1. The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced): 30 points.
+2. The code is well documented: 5 points.
+3. The analysis in the main routine is detailed and clear: 5 Points.
+4. The code illustrates separation of concerns and good style: 5 points.
+5. The single PDF file includes a labelled screen scrape of the execution and labelled Java source code. 5 Points  
 
 ### Task 1
 
@@ -401,11 +401,11 @@ Use the following three labels in your single PDF:
 **Task 1 Grading Rubric 50 Points**
 
 Rubric:
-The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced) and a client server architecture based on TCP sockets is used. 30 points.
-The JSON message being sent to the server is well designed: 5 Points
-The JSON message being sent from the server to the client is well designed: 5 Points.
-Separation of concerns is well done: 5 points.
-The single PDF file includes a labelled screen scrape of the execution and labelled Java source code: 5 Points  
+1. The execution is correct and includes the same tests as above - in the same order (the name Alice has been replaced) and a client server architecture based on TCP sockets is used. 30 points.
+2. The JSON message being sent to the server is well designed: 5 Points
+3. The JSON message being sent from the server to the client is well designed: 5 Points.
+4. Separation of concerns is well done: 5 points.
+5. The single PDF file includes a labelled screen scrape of the execution and labelled Java source code: 5 Points  
 
 
 **Project 3 Submission Requirements**
