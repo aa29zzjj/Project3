@@ -384,7 +384,7 @@ Rubric:
 
 The execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets.
 
-You are required to design two JSON messages types - a message to encapsulate
+You are required to design and use two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server.
 
 Use the following three labels in your single PDF:
