@@ -26,7 +26,11 @@ assignment does not do all of that but it does provide a foundation to build on.
 
 ### Overview
 
-In Task 0, you will write a blockchain by carefully following the directions found [in this Javadoc](http://www.andrew.cmu.edu/course/95-702/examples/javadoc/index.html).
+In Task 0, you will write a blockchain by carefully following the directions found in our JavaDoc:
+
+[See Block JavaDoc](https://www.andrew.cmu.edu/course/95-702/examples/javadoc/blockchaintask0/Block.html).
+
+[See BlockChain Javadoc](https://www.andrew.cmu.edu/course/95-702/examples/javadoc/blockchaintask0/BlockChain.html).
 
 Note that the Javadoc describes writing "data" or a "transaction" to the blockchain. In this project, our "data" or "transaction" will be simple statements transferring "dscoin" from one player to another.
 
