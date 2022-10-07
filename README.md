@@ -29,7 +29,7 @@ assignment does not do all of that but it does provide a foundation to build on.
 In this project we will be using the Gson class to parse JSON messages. In this prerequisite section, there is guidance on setting up Gson in Intellij. JSON is a popular data format. It competes with XML. Either JSON or XML is appropriate to transfer textual data from one machine to another. Be sure to review the JSON grammar at www.json.org.
 
 0. Create a new project named TestGsonProject and select "Maven" as the build system.
-1. Edit the pom.xml file and include this XML element at the end of the file (before </project>).
+1. Edit the pom.xml file and include this XML element at the end of the file (before the closing project tag).
 ```
 <dependency>
         <groupId>com.google.code.gson</groupId>
