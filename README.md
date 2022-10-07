@@ -37,9 +37,9 @@ In this project we will be using the Gson class to parse JSON messages. In this 
         <version>2.9.0</version>
 </dependency>
 ```
-2. Select File/Project Structure/Libraries/+/From Maven/
-   Using the search bar search for com.google.code.gson
-   and then select com.google.code.gson:2.9.0
+2. Select File/Project Structure/Libraries/+/From Maven/.
+   Using the search bar, search for com.google.code.gson.
+   And then select com.google.code.gson:2.9.0.
 
 3. Include the following import in your source code:
 
