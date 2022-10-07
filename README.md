@@ -2,8 +2,8 @@
 ## Project 3 Fall 2022
 
 
-Assigned: Friday, February 25, 2022
-Due Friday, March 18, 11:59pm
+Assigned: Friday, October 7, 2022
+Due Thursday, October 27, 11:59pm
 
 ### Important Note
 
@@ -61,7 +61,7 @@ The execution of Task 0, a non-distributed stand-alone program, will look like t
 
 Label this first section ***Task 0 Execution*** in your PDF. Of course, your code - not mine - will produce the console interaction.
 
-**In addition, wherever the name "Mike" is used, replace it with "Alice". Replace the names "Marty" and "Joe" with "Bob" and "Carol".**
+**In addition, wherever the name "Mike" is used, replace it with "Alice". Also, replace the names "Marty" and "Joe" and "Andy" with "Bob" and "Carol" and "Donna".**
 
 ### Task 0 Execution
 
@@ -70,7 +70,7 @@ Label this first section ***Task 0 Execution*** in your PDF. Of course, your cod
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 0
@@ -85,20 +85,20 @@ Chain hash: 0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 1
 Enter difficulty > 0
 2
 Enter transaction
-Mike pays Marty 100DSCoin
+Mike pays Marty 100 DSCoin
 Total execution time to add this block was 19 milliseconds
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 1
@@ -111,20 +111,20 @@ Total execution time to add this block was 42 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 1
 Enter difficulty > 0
 2
 Enter transaction
-Joe pays Andy 10 DSCoin
+Joe pays Andy 10 DS Coin
 Total execution time to add this block was 6 milliseconds
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 2
@@ -134,13 +134,13 @@ Total execution time to verify the chain was  1 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 3
 View the Blockchain
 {"ds_chain" : [ {"index" : 0,"time stamp " : "2022-02-25 17:41:11.927","Tx ": "Genesis","PrevHash" : "","nonce" : 286,"difficulty": 2},
-{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 100DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
+{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 100 DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
 {"index" : 2,"time stamp " : "2022-02-25 17:44:27.43","Tx ": "Marty pays Joe 50 DSCoin","PrevHash" : "000D14B83028DD36BD6330B8DAB185012F8625E9C9D1A8704E9C1189FD98D9DF","nonce" : 819,"difficulty": 2},
 {"index" : 3,"time stamp " : "2022-02-25 17:45:22.044","Tx ": "Joe pays Andy 10 DSCoin","PrevHash" : "00B4CC539C5CC36AE2F09CC7B857A1330D2D02C00CA90D4A34ACD7E01D7225FC","nonce" : 167,"difficulty": 2}
  ], "chainHash":"002EEC64A0ABB7FF1FBBF72BE17BD3DC3C1D5FE5FB01360680930B1CFCF5A84A"}
@@ -148,7 +148,7 @@ View the Blockchain
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 4
@@ -162,7 +162,7 @@ Block 1 now holds Mike pays Marty 76 DSCoin
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 3
@@ -176,7 +176,7 @@ View the Blockchain
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 2
@@ -187,7 +187,7 @@ Total execution time to verify the chain was  0 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 5
@@ -196,7 +196,7 @@ Total execution time required to repair the chain was 8 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 2
@@ -206,7 +206,7 @@ Total execution time to verify the chain was  1 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 1
@@ -219,7 +219,7 @@ Total execution time to add this block was 224 milliseconds
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 0
@@ -234,7 +234,7 @@ Chain hash: 0000DF114971BAF2F0DCC51777451973DF1AFE93189B64D7AC8BA06E39681067
 1. Add a transaction to the blockchain.
 2. Verify the blockchain.
 3. View the blockchain.
-4. corrupt the chain.
+4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
 6
@@ -254,7 +254,7 @@ See the Javadoc's main routine. You are asked to experiment and provide some tim
 ### Task 0 Grading Rubric 50 Points
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names have been replaced with Alice, Bob, and Carol.): 30 points.
+1. The execution is correct and includes the same tests as above - in the same order (the names have been replaced with Alice, Bob, Carol, and Donna): 30 points.
 2. The code is well documented: 5 points.
 3. The analysis in the main routine is detailed and clear: 5 Points.
 Within your comments in the main routine, you must describe how this system behaves as the difficulty increases. Run some experiments by adding new blocks with increasing difficulties. Describe what you find. Be specific and quote some times.
@@ -279,7 +279,7 @@ Use the following four labels in your single PDF:
 
 Copy and paste your client side console.
 
-**Task 1 Server Side Execution (The names "Mike", "Marty", and "Joe" will be replaced.)**
+**Task 1 Server Side Execution (The names "Mike", "Marty", "Joe" and "Andy" will be replaced.)**
 
 ```
 Blockchain server running
@@ -300,7 +300,7 @@ Total execution time required to verify the chain was 1 milliseconds
 Setting response to Total execution time to verify the chain was  1 milliseconds
 View the Blockchain
 Setting response to {"ds_chain" : [ {"index" : 0,"time stamp " : "2022-02-25 17:41:11.927","Tx ": "Genesis","PrevHash" : "","nonce" : 286,"difficulty": 2},
-{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 100DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
+{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 100 DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
 {"index" : 2,"time stamp " : "2022-02-25 17:44:27.43","Tx ": "Marty pays Joe 50 DSCoin","PrevHash" : "000D14B83028DD36BD6330B8DAB185012F8625E9C9D1A8704E9C1189FD98D9DF","nonce" : 819,"difficulty": 2},
 {"index" : 3,"time stamp " : "2022-02-25 17:45:22.044","Tx ": "Joe pays Andy 10 DSCoin","PrevHash" : "00B4CC539C5CC36AE2F09CC7B857A1330D2D02C00CA90D4A34ACD7E01D7225FC","nonce" : 167,"difficulty": 2}
  ], "chainHash":"002EEC64A0ABB7FF1FBBF72BE17BD3DC3C1D5FE5FB01360680930B1CFCF5A84A"}
@@ -342,7 +342,7 @@ Include all server side source code clearly labelled.
 **Task 1 Grading Rubric 50 Points**
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names "Mike", "Marty", and "Joe" have been replaced) and a client server architecture based on TCP sockets is used. 30 points.
+1. The execution is correct and includes the same tests as above - in the same order (the names "Mike", "Marty", "Joe" and "Andy" have been replaced) and a client server architecture based on TCP sockets is used. 30 points.
 2. The JSON message being sent to the server is well designed (RequestMessage.java): 5 Points
 3. The JSON message being sent from the server to the client is well designed (ResponseMessage.java): 5 Points.
 4. Separation of concerns is well done: 5 points.
