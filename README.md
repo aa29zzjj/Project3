@@ -24,6 +24,111 @@ blockchain (Task 0) and a distributed system where a remote client interacts wit
 Note that this is not all of blockchain. There is more to learn. Real blockchains are decentralized and include peer to peer communication and many replicas of the blockchain. The blocks themselves typically include Merkle Trees. This
 assignment does not do all of that but it does provide a foundation to build on.
 
+### Prerequisites
+
+In this project we will be using the Gson class to parse JSON messages. In this prerequisite section, there is guidance on setting up Gson in Intellij. JSON is a popular data format. It competes with XML. Either JSON or XML is appropriate to transfer textual data from one machine to another. Be sure to review the JSON grammar at www.json.org.
+
+0. Create a new project named TestGsonProject and select "Maven" as the build system.
+1. Edit the pom.xml file and include this XML element at the end of the file (before </project>).
+```
+<dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.9.0</version>
+</dependency>
+```
+2. Select File/Project Structure/Libraries/+/From Maven/
+   Using the search bar search for com.google.code.gson
+   and then select com.google.code.gson:2.9.0
+
+3. Include the following import in your source code:
+
+```
+import com.google.gson.Gson;
+```    
+
+4. Test by compiling and running the following program (you may need to add a package):
+
+```
+import com.google.gson.Gson;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        Gson gson = new Gson();
+        System.out.println("Gson is available!");
+    }
+}
+```
+
+5. Suppose we have a message object that we want to serialize to JSON. Why do this?
+We may want to transmit the data over a network in an interoperable and textual way.
+
+```
+package org.example;
+import com.google.gson.Gson;
+
+class Message {
+    String name;
+    int id;
+    public Message(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a message
+        Message msg = new Message("Alice", 30);
+        // Create a Gson object
+        Gson gson = new Gson();
+        // Serialize to JSON
+        String messageToSend = gson.toJson(msg);
+        // Display the JSON string
+        System.out.println(messageToSend);
+    }
+}
+```
+
+6. Suppose we receive a message as a JSON string. We may want to deserialize the JSON string to a Java object. Why do this? This is a huge convenience. We do not have to parse the message ourselves.
+
+```
+package org.example;
+import com.google.gson.Gson;
+
+class Message {
+    String name;
+    int id;
+    public Message(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a message
+        Message msg = new Message("Alice", 30);
+        // Create a Gson object
+        Gson gson = new Gson();
+        // Serialize to JSON
+        String messageToSend = gson.toJson(msg);
+        // Display the JSON string
+        System.out.println(messageToSend);
+
+        // Suppose we receive the following JSON string from a network or file.
+        // Double quotes would be used in a real message. Single quotes are used
+        // here because we are doing this within a Java program.
+        String someJSON = "{'id':45,'name':'Bob'}";
+        Message incommingMsg = gson.fromJson(someJSON,Message.class);
+        System.out.println(incommingMsg.name);
+        System.out.println(incommingMsg.id);
+
+    }
+}
+```
+
 ### Overview
 
 In Task 0, you will write a blockchain by carefully following the directions found in our JavaDoc:
@@ -36,7 +141,7 @@ Note that the Javadoc describes writing "data" or a "transaction" to the blockch
 
 The Javadoc describes two classes that you need to write - Block.java and BlockChain.java.
 
-In Task 1, you will distribute the application that you created in Task 0. You will write a client server application. The interaction between the client and the server will be with JSON messages over TCP sockets. Thus, some work from Project2 will be very useful and may be reused here.
+In Task 1, you will distribute the application that you created in Task 0. You will write a client server application. The interaction between the client and the server will be with JSON messages (using Gson) over TCP sockets. Thus, some work from Project2 will be very useful and may be reused here.
 
 You will be submitting complete Java programs and console screen interactions on a single PDF file. These should be clearly labelled as described below.
 
