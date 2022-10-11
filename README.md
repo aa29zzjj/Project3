@@ -3,7 +3,7 @@
 
 
 Assigned: Friday, October 7, 2022
-Due Thursday, October 27, 11:59pm
+Due Sunday, October 30, 11:59pm
 
 ### Important Note
 
