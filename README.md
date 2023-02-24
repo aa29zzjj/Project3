@@ -1,5 +1,5 @@
 # 95-702 Distributed Systems For Information Systems Management
-## Project 3 Spring 2023
+## Project 3 Blockchain                             Spring 2023
 
 
 Assigned: Friday, February 24, 2022
