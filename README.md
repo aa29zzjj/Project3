@@ -471,27 +471,26 @@ To get started using Algorand, we need a wallet and an account.
 0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/.
 1. Choose "Create an Account" and choose a password. This is stored on your local machine.
 2. Choose an account name. You might use your Andrew id. This too is stored on your local machine.
-3. Locate your recovery phrase. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
+3. Locate your recovery phrase. See "view pass phrase" after clicking the three horizontal dots on the Accounts page. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
 4. Keep the recovery phrase in some place private. It is suggested that this phrase be stored on paper and off any computer. If you lose your recovery phrase, you lose your money. Do not include your recovery phrase on the PDF that you will submit.
 5. Change to the Algorand testnet by selecting "Settings" and then "Node Settings" and then "testnet". We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
-6. Create an account and copy and save its address. Account addresses are public and are stored locally and are used to identify the account on the testnet.
-7. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
-8. Use the your account addresses to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
-9. You may be asked to prove that you are human.
-10. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos "in" your wallet. You need to look at the testnet and not the mainnet to see your Algos in your wallet.
-11. After some time, the wallet will show the new balance of 10 Algos.
-12. Transfer 5 Algos from your account to my account address. My account address is
+6. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
+7. Use the your account addresses to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
+8. You may be asked to prove that you are human.
+9. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos "in" your wallet. You need to look at the testnet and not the mainnet to see your Algos in your wallet.
+10. After some time, the wallet will show the new balance of 10 Algos.
+11. Transfer 5 Algos from your account to my account address. My account address is
 ```
 K2EP3LIPR3KEI7QOVW3UHLN6JGASMF442YRI5IPO6N6UWPUVNZJ6BVFT4U
 ```
 NOTE: These are testnet Algos and not real Algos. We cannot exchange them for anything of value. 
 
-14. Also, keep a copy of the transaction ID.
+12. Also, keep a copy of the transaction ID.
 In a recent transaction, my transaction ID was 4CTARWVWGPBL6G4GOKBIQQLKH5NOHOGV3EVF5XMFQGIGUA72HN6Q.
 
 Next, we want to visit the Algorand blockchain using API's. There are two API's available. One is the Algorand Node V2 and the other is the Algorand Indexer V2.
 
-15. In an IntelliJ project, right click the Project node and select HTTP Request.
+13. In an IntelliJ project, right click the Project node and select HTTP Request.
 We can enter our request directly into IntelliJ. For example, to view the details of the genesis block on the Algorand testnet, enter the following HTTP request and click the green triangle just to the left of the request:
 
 ```
@@ -499,9 +498,9 @@ We can enter our request directly into IntelliJ. For example, to view the detail
 GET https://node.testnet.algoexplorerapi.io/genesis
 
 ```
-16. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
+14. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
 
-17. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me. To do this, you will need to use the Algorand Indexer V2 API.
+15. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me. To do this, you will need to use the Algorand Indexer V2 API.
 
 Using the IntelliJ HTTP client, copy (or take a screenshot) of the HTTP requests and the HTTP responses (including JSON). Include the two request/response pairs on your PDF.
 
