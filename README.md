@@ -495,10 +495,11 @@ Next, we want to visit the Algorand blockchain using API's. There are two API's 
 We can enter our request directly into IntelliJ. For example, to view the details of the genesis block on the Algorand testnet, enter the following HTTP request and click the green triangle just to the left of the request:
 
 ```
+###
 GET https://node.testnet.algoexplorerapi.io/genesis
 
 ```
-16. Note that you may directly post curl requests into IntelliJ and it will convert the request into IntelliJ's format.
+16. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
 
 17. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me.
 
