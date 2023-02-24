@@ -21,7 +21,9 @@ In this project, we will illustrate an important nonfunctional characteristic
 of blockchain technology - its tamper evident design. We will build a stand-alone
 blockchain (Task 0) and a distributed system where a remote client interacts with a blockchain API (Task 1).
 
-In Task 3, we will work with the Algorand blockchain. Unlike Bitcoin, Algorand is based on an environmentally friendly consensus protocol. 
+Another important non-functional characteristic is interoperability. This will be illustrated in Task 2 where HTTP and JSON are used to interact with the Algorand blockchain.
+
+Unlike Bitcoin, Algorand is based on an environmentally friendly consensus protocol. In Algorand, there is no proof-of-work. It is based on pure proof-of-stake.
 
 ### Prerequisites
 
