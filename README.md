@@ -479,7 +479,13 @@ Use an Algorand wallet to create an account. Use the Algorand dispenser to dispe
 
 :checkered_flag:**On your single pdf, make a copy of the screenshots labelled clearly as Project3Task2.**
 
+**Task 2 Grading Rubric 20 Points**
 
+Rubric:
+1. The IntelliJ HTTP client is being used correctly. 5 points.
+2. The HTTP client resquest is correct. 5 Points.
+3. The HTTP client response is correct: 5 Points.
+4. The correct transaction is show on the PDF: 5 points.
 
 **Project 3 Submission Requirements**
 
