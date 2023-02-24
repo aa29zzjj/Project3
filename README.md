@@ -501,9 +501,9 @@ GET https://node.testnet.algoexplorerapi.io/genesis
 ```
 16. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
 
-17. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me.
+17. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me. To do this, you will need to use the Algorand Indexer V2 API.
 
-Copy (or make a screenshot) of the HTTP requests and the HTTP responses (including JSON). Include these request/response pairs on your PDF.
+Using the IntelliJ HTTP client, copy (or take a screenshot) of the HTTP requests and the HTTP responses (including JSON). Include the two request/response pairs on your PDF.
 
 :checkered_flag:**On your single pdf, make a copy of the screenshots labelled clearly as Project3Task2.**
 
@@ -513,7 +513,7 @@ Rubric:
 1. The IntelliJ HTTP client is being used correctly. 5 points.
 2. The HTTP client resquest is correct. 5 Points.
 3. The HTTP client response is correct: 5 Points.
-4. The correct transaction is show on the PDF: 5 points.
+4. The correct transactions are shown on the PDF: 5 points.
 
 **Project 3 Submission Requirements**
 
