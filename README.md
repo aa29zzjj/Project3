@@ -1,13 +1,13 @@
 # 95-702 Distributed Systems For Information Systems Management
-## Project 3 Fall 2022
+## Project 3 Spring 2023
 
 
-Assigned: Friday, October 7, 2022
-Due Sunday, October 30, 11:59pm
+Assigned: Friday, February 24, 2022
+Due Friday, March 17, 2023 at 11:59pm
 
 ### Important Note
 
-For MOSS, we need your email address and full name at top of each source code file.
+Place your email address and full name at top of each source code file.
 
 ### Principles
 One of our primary objectives in this course is to make clear the fundamental
@@ -21,8 +21,7 @@ In this project, we will illustrate an important nonfunctional characteristic
 of blockchain technology - its tamper evident design. We will build a stand-alone
 blockchain (Task 0) and a distributed system where a remote client interacts with a blockchain API (Task 1).
 
-Note that this is not all of blockchain. There is more to learn. Real blockchains are decentralized and include peer to peer communication and many replicas of the blockchain. The blocks themselves typically include Merkle Trees. This
-assignment does not do all of that but it does provide a foundation to build on.
+In Task 3, we will work with the Algorand blockchain. Unlike Bitcoin, Algorand is based on an environmentally friendly consensus protocol. 
 
 ### Prerequisites
 
@@ -158,6 +157,8 @@ Data validation (of user input) is very important but we are not doing that here
 
 Any code from external sources, e.g., stack overflow, **must be clearly cited with a URL**.
 
+In Task 2, there is no programming. You will work with an Algorand wallet and learn how to transfer funds (Algos) from one account to another. You will learn how to examine account values and transactions on Algorand's testnet blockchain. Algorand's REST API will be accessed with HTTP requests. To demonstrate that you have completed your work, you will submit screenshots on your single pdf.  
+
 ## Task 0  
 
 Write a solution to Task 0 by studying the Javadoc provided (Block.java and BlockChain.java). The logic found in Task 0 will be reused in Task 1.
@@ -166,7 +167,7 @@ The execution of Task 0, a non-distributed stand-alone program, will look like t
 
 Label this first section ***Task 0 Execution*** in your PDF. Of course, your code - not mine - will produce the console interaction.
 
-**In addition, wherever the name "Mike" is used, replace it with "Alice". Also, replace the names "Marty" and "Joe" and "Andy" with "Bob" and "Carol" and "Donna".**
+**In addition, wherever the name "Mike" is used, replace it with "Alice". Also, replace the names "Marty" and "Joe" and "Andy" with "Bill" and "Clara" and "Daisy".**
 
 ### Task 0 Execution
 
@@ -356,13 +357,13 @@ See the Javadoc's main routine. You are asked to experiment and provide some tim
 
 ----
 
-### Task 0 Grading Rubric 50 Points
+### Task 0 Grading Rubric 40 Points
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names have been replaced with Alice, Bob, Carol, and Donna): 30 points.
+1. The execution is correct and includes the same tests as above - in the same order (the names have been replaced with Alice, Bill, Clara, and Daisy): 20 points.
 2. The code is well documented: 5 points.
 3. The analysis in the main routine is detailed and clear: 5 Points.
-Within your comments in the main routine, you must describe how this system behaves as the difficulty increases. Run some experiments by adding new blocks with increasing difficulties. Describe what you find. Be specific and quote some times.
+Within your comments in the main routine, you must describe how this system behaves as the difficulty level increases. Run some experiments by adding new blocks with increasing difficulties. Describe what you find. Be specific and quote some times.
 You need not employ a system clock. You should be able to make clear statements describing the approximate run times associated with addBlock(), isChainValid(), and chainRepair().
 4. The code illustrates separation of concerns and good style: 5 points.
 5. The single PDF file includes sections correctly labelled: 5 Points.  
@@ -376,7 +377,7 @@ The client side execution of Task 1 will appear exactly the same as in Task 0. T
 You are required to design and use two JSON messages types - a message to encapsulate
 requests from the client and a message to encapsulate responses from the server. See the server side interaction below. Your JSON messages must have the same name value pairs. The order of the names may differ.
 
-You should have a class named RequestMessage and a class named ResponseMessage to encapsulate the JSON data.
+You should have a class named RequestMessage and a class named ResponseMessage to encapsulate the JSON data. You need to include these classes in your submission.
 
 Use the following four labels in your single PDF:
 
@@ -384,7 +385,7 @@ Use the following four labels in your single PDF:
 
 Copy and paste your client side console.
 
-**Task 1 Server Side Execution (The names "Mike", "Marty", "Joe" and "Andy" will be replaced.)**
+**Task 1 Server Side Execution (The names "Mike", "Marty", "Joe" and "Andy" will be replaced, as described above.)**
 
 ```
 Blockchain server running
@@ -438,22 +439,47 @@ Response : {"selection":0,"size":5,"chainHash":"0000DF114971BAF2F0DCC51777451973
 
 **Task 1 Client Source Code**
 
-Include all client side source code clearly labelled.
+Include all client side source code clearly labelled. This includes the RequestMessage and ResponseMessage classes. 
 
 **Task 1 Server Source Code**
 
-Include all server side source code clearly labelled.
+Include all server side source code clearly labelled. This includes the RequestMessage and ResponseMessage classes. These will be the same classes as found on the client side.
 
-**Task 1 Grading Rubric 50 Points**
+**Task 1 Grading Rubric 40 Points**
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names "Mike", "Marty", "Joe" and "Andy" have been replaced) and a client server architecture based on TCP sockets is used. 30 points.
+1. The execution is correct and includes the same tests as above - in the same order (the names "Mike", "Marty", "Joe" and "Andy" have been replaced) and a client server architecture based on TCP sockets is used. 20 points.
 2. The JSON message being sent to the server is well designed (RequestMessage.java): 5 Points
 3. The JSON message being sent from the server to the client is well designed (ResponseMessage.java): 5 Points.
 4. Separation of concerns is well done: 5 points.
 5. The single PDF file includes sections correctly labelled: 5 Points.
 
 -----
+
+## Task 2 Exploring Web3 using Algorand
+
+Use an Algorand wallet to create an account. Use the Algorand dispenser to dispense free funds into your account. These funds will be available for transfer on the Algorand testnet.  
+
+0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/
+
+1. Choose "Create an Account" and choose a password. This is stored on your local machine.
+2. Choose an account name. You might use your Andrew id. This too is stored on your local machine.
+3. Locate your your recovery phrase. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
+4. Keep the recovery phrase in some place private. It is suggested that this phrase be stored on paper and off any computer. If you lose your recovery phrase, you lose your money. Do not include your recovery phrase on the PDF that you will submit.
+5. Change to the Algorand testnet by selecting Settings and then Node Settings and then testnet. We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
+6. Create an account and copy and save its address. Account addresses are public and are stored locally and are used to identify the account on the testnet.
+7. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
+8. Use the your account addresses to get funds from the dispenser.
+9. You may be asked to prove that you are human.
+10. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos "in" your wallet. 
+11. After some time, the wallet will show the new balance of 10 Algos.
+12. Transfer 5 Algos from your account to my account address. PLEASE NOTE: These are testnet Algos and not real Algos. I cannot exchange them for anything of value. 
+13. Take a screenshot showing the send transaction.
+14. Using IntelliJ, create an HTTP request to visit the testnet blockchain and get the details associated with the transfer transaction. That is, the JSON repsonse will show the transaction that sends 5 Algos from your account to mine. Copy (or make a screenshot) of the HTTP request and the HTTP and JSON response. Include this on the single PDF.
+
+:checkered_flag:**On your single pdf, make a copy of the screenshots labelled clearly as Project3Task2.**
+
+
 
 **Project 3 Submission Requirements**
 
@@ -465,11 +491,11 @@ You should now have two zip files:
 * Project3Task0.zip
 * Project3Task1.zip
 
-And a single pdf named Project3.pdf.
+You will also have a single pdf named Project3.pdf. The PDF will include the screenshot from Project3Task2.
 
 Create a new empty folder named with your Andrew id (**very important**). Put the three files above into this new folder. Zip that folder, and submit it to Canvas.
 
 **The file named YourAndrewID.zip contains two zips and a pdf:**
 * Project3Task0.zip
 * Project3Task1.zip
-* Project3.pdf
+* Project3.pdf (includes screenshot from Project3Task2)
