@@ -464,6 +464,8 @@ We might define Web 1.0 as a read only distributed system. Fetch a document and 
 
 The overall architecture on most Web3 systems is "decentralized peer-to-peer" rather than the more centralized "client server".
 
+Algorand is a Web3 blockchain that competes with Ethereum.
+
 To get started using Algorand, we need a wallet and an account.  
 
 0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/
