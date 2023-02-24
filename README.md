@@ -468,12 +468,12 @@ Algorand is a Web3 blockchain that competes with Ethereum.
 
 To get started using Algorand, we need a wallet and an account.  
 
-0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/
+0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/.
 1. Choose "Create an Account" and choose a password. This is stored on your local machine.
 2. Choose an account name. You might use your Andrew id. This too is stored on your local machine.
-3. Locate your your recovery phrase. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
+3. Locate your recovery phrase. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
 4. Keep the recovery phrase in some place private. It is suggested that this phrase be stored on paper and off any computer. If you lose your recovery phrase, you lose your money. Do not include your recovery phrase on the PDF that you will submit.
-5. Change to the Algorand testnet by selecting Settings and then Node Settings and then testnet. We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
+5. Change to the Algorand testnet by selecting "Settings" and then "Node Settings" and then "testnet". We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
 6. Create an account and copy and save its address. Account addresses are public and are stored locally and are used to identify the account on the testnet.
 7. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
 8. Use the your account addresses to get funds from the dispenser and be sure to save your transaction ID.
