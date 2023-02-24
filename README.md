@@ -460,7 +460,7 @@ Rubric:
 
 ## Task 2 Exploring Web3 using Algorand
 
-We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. The user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred. 
+We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. Using a browser, the user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred. 
 
 The overall architecture on most Web3 systems is "decentralized peer-to-peer" rather than the more centralized "client server".
 
