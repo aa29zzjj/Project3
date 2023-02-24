@@ -460,7 +460,9 @@ Rubric:
 
 ## Task 2 Exploring Web3 using Algorand
 
-Use an Algorand wallet to create an account. Use the Algorand dispenser to dispense free funds into your account. These funds will be available for transfer on the Algorand testnet.  
+We might define Web 1.0 as a read only system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" system. The user is able to enter data and communicate that data to servers. Web 3.0 might be cataegorized as "read-write-own". Cryptocurrency may be owned and transferred. 
+
+Here we will use an Algorand wallet to create an account. Use the Algorand dispenser to dispense free funds into your account. These funds will be available for transfer on the Algorand testnet.  
 
 0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/
 
