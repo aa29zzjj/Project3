@@ -490,8 +490,8 @@ In a recent transaction, my transaction ID was 4CTARWVWGPBL6G4GOKBIQQLKH5NOHOGV3
 
 Next, we want to visit the Algorand blockchain using API's. There are two API's available. One is the Algorand Node V2 and the other is the Algorand Indexer V2.
 
-13. In an IntelliJ project, right click the Project node and select HTTP Request.
-We can enter our request directly into IntelliJ. For example, to view the details of the genesis block on the Algorand testnet, enter the following HTTP request and click the green triangle just to the left of the request:
+13. In an IntelliJ project, right click the Project node and select New/HTTP Request.
+We can enter our HTTP request directly into IntelliJ. For example, to view the details of the genesis block on the Algorand testnet, enter the following HTTP request and click the green triangle just to the left of the request:
 
 ```
 ###
