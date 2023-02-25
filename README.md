@@ -475,7 +475,7 @@ To get started using Algorand, we need a wallet and an account.
 4. Keep the recovery phrase in some place private. It is suggested that this phrase be stored on paper and off any computer. If you lose your recovery phrase, you lose your money. Do not include your recovery phrase on the PDF that you will submit.
 5. Change to the Algorand testnet by selecting "Settings" and then "Node Settings" and then "testnet". We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
 6. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
-7. Use the your account addresses to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
+7. Use the your account address to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
 8. You may be asked to prove that you are human.
 9. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos "in" your wallet. You need to look at the testnet and not the mainnet to see your Algos in your wallet.
 10. After some time, the wallet will show the new balance of 10 Algos.
