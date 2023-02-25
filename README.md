@@ -477,7 +477,7 @@ To get started using Algorand, we need a wallet and an account.
 6. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
 7. Use your account address to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
 8. You may be asked to prove that you are human.
-9. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos "in" your wallet. You need to look at the testnet and not the mainnet to see your Algos in your wallet.
+9. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos physically "in" your wallet. Note that you need to look at the testnet and not the mainnet to see the Algos controlled by your wallet.
 10. After some time, the wallet will show the new balance of 10 Algos.
 11. Transfer 5 Algos from your account to my account address. My account address is
 ```
