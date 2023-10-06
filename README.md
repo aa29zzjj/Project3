@@ -1,9 +1,9 @@
 # 95-702 Distributed Systems For Information Systems Management
-## Project 3 Blockchain                             Spring 2023
+## Project 3 Blockchain                             Fall 2023
 
 
-Assigned: Friday, February 24, 2022
-Due Friday, March 17, 2023 at 11:59pm
+Assigned: Friday, October 6, 2023
+Due Friday, October 27, 2023 at 11:59pm
 
 ### Important Note
 
@@ -129,6 +129,22 @@ public class Main {
     }
 }
 ```
+7. As a warm up exercise, write a program that reads a financial transaction from the keyboard. The transaction
+will be expressed as a JSON string. Use Gson to build a Java object from the JSON string. Display the values
+within the object and then use Gson to display the Java object in JSON format.
+
+8. It is fine to use a large language model for this exercise. It is also fine to simply code this yourself.
+
+Here is an example execution:
+```
+Enter a transaction in Json format. Include from, to, and amount.       
+{"from":"Mike","to":"Marty","amount":123.50}      This line is entered by the user.
+From: Mike                                        Display values within the object
+To: Marty
+Amount: 123.5
+{"from":"Mike","to":"Marty","amount":123.5}       Use Gson to generate the JSON
+
+```
 
 ### Overview
 
@@ -157,7 +173,11 @@ Be sure to include comments within your methods.
 
 Data validation (of user input) is very important but we are not doing that here.
 
-Any code from external sources, e.g., stack overflow, **must be clearly cited with a URL**.
+Any code from external sources, e.g., stack overflow or a large language model, **must be clearly cited with a URL or, in the case of an LLM, a comment saying what tool it is that you are using**.
+
+You are not allowed to use a Large Language Model on Task 0 or Task 2 but may use one on Task 1.
+
+Note that if you do use code from an external source or an LLM, you are still responsible for that code. That is, you may be asked questions about the code on exams. You will not have access to stack overflow or an LLM on exams.
 
 In Task 2, there is no programming. You will work with an Algorand wallet and learn how to transfer funds (Algos) from one account to another. You will learn how to examine account values and transactions on Algorand's testnet blockchain. Algorand's REST API will be accessed with HTTP requests. To demonstrate that you have completed your work, you will submit screenshots on your single pdf.  
 
@@ -165,11 +185,13 @@ In Task 2, there is no programming. You will work with an Algorand wallet and le
 
 Write a solution to Task 0 by studying the Javadoc provided (Block.java and BlockChain.java). The logic found in Task 0 will be reused in Task 1.
 
-The execution of Task 0, a non-distributed stand-alone program, will look like the following interaction. As part of the submission of Task 0, you must turn in a copy and paste from the console - similar to the one below.
+The execution of Task 0, a non-distributed stand-alone program, will look like the following interaction. As part of the submission of Task 0, you must turn in the output from the console - use copy and paste. The execution will appear similar to the one below.
+
+Note that the last call to add a transaction requires that you use your first name to pay Marty 100 dscoins.
 
 Label this first section ***Task 0 Execution*** in your PDF. Of course, your code - not mine - will produce the console interaction.
 
-**In addition, wherever the name "Mike" is used, replace it with "Alice". Also, replace the names "Marty" and "Joe" and "Andy" with "Bill" and "Clara" and "Daisy".**
+The order of the name value pairs within a JSON message is not important. It is fine if your order differs from mine.
 
 ### Task 0 Execution
 
@@ -345,24 +367,38 @@ Chain hash: 0000DF114971BAF2F0DCC51777451973DF1AFE93189B64D7AC8BA06E39681067
 4. Corrupt the chain.
 5. Hide the corruption by repairing the chain.
 6. Exit
+1
+Enter difficulty > 0
+5
+Enter transaction
+<PLACE YOUR FIRST NAME HERE> pays Marty 100 DSCoin
+Total execution time to add this block was 224 milliseconds
+
+0. View basic blockchain status.
+1. Add a transaction to the blockchain.
+2. Verify the blockchain.
+3. View the blockchain.
+4. Corrupt the chain.
+5. Hide the corruption by repairing the chain.
+6. Exit
 6
 
 Process finished with exit code 0
 ```
 
-Label this second section **Task 0 Block.java** and include a complete listing of Block.java
+Label this second section **Task 0 Block.java** and include a complete listing of Block.java.
 
+Label this third section **Task 0 BlockChain.java** and include a complete listing of BlockChain.java.
 
-Label this third section **Task 0 BlockChain.java** and include a complete listing of BlockChain.java
-
-See the Javadoc's main routine. You are asked to experiment and provide some timing data and analysis. That commentary should be present in the comments of your main routine.
+See the Javadoc's main routine. You are asked to experiment and provide some timing data and analysis.
+That commentary should be present in the comments of your main routine.
 
 ----
 
 ### Task 0 Grading Rubric 40 Points
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names have been replaced with Alice, Bill, Clara, and Daisy): 20 points.
+1. The execution (as shown by the console interaction) is correct and includes the same tests as above - using the same names and in the same order: 20 points.
 2. The code is well documented: 5 points.
 3. The analysis in the main routine is detailed and clear: 5 Points.
 Within your comments in the main routine, you must describe how this system behaves as the difficulty level increases. Run some experiments by adding new blocks with increasing difficulties. Describe what you find. Be specific and quote some times.
@@ -377,71 +413,42 @@ You need not employ a system clock. You should be able to make clear statements 
 The client side execution of Task 1 will appear exactly the same as in Task 0. The primary difference will be that, behind the scenes, there will be a client server interaction using JSON over TCP sockets. The blockchain will exist on the server. It will be constructed there and the client will make requests for operations over a TCP socket. The client will be focused on driving the menu driven interaction and communicating with the server on the backend. If the client exits, the server will still handle new requests with the existing blockchain intact.
 
 You are required to design and use two JSON messages types - a message to encapsulate
-requests from the client and a message to encapsulate responses from the server. See the server side interaction below. Your JSON messages must have the same name value pairs. The order of the names may differ.
+requests from the client and a message to encapsulate responses from the server. The server side display will
+show each request message (received from the client -in JSON) and each response message (being sent to the client - in JSON).
 
-You should have a class named RequestMessage and a class named ResponseMessage to encapsulate the JSON data. You need to include these classes in your submission.
+You should have a class named RequestMessage and a class named ResponseMessage to encapsulate the JSON data. You need to include these classes in your submission. You will use the RequestMessage class on both the client and the server. And, you will use the ResponseMessage class on both the client and the server.
 
 Use the following four labels in your single PDF:
 
 **Task 1 Client Side Execution**
 
-Copy and paste your client side console.
+Copy and paste your client side console. This will appear as in Task 0.
 
-**Task 1 Server Side Execution (The names "Mike", "Marty", "Joe" and "Andy" will be replaced, as described above.)**
+**Task 1 Server Side Execution**
+
+Here, we will see the request and response messages in JSON format.
 
 ```
 Blockchain server running
 We have a visitor
-Response : {"selection":0,"size":1,"chainHash":"0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","totalHashes":256,"totalDiff":2,"recentNonce":286,"diff":2,"hps":3231017}
-Adding a block
-Setting response to Total execution time to add this block was 19 milliseconds
-...{"selection":1,"response":"Total execution time to add this block was 19 milliseconds"}
-Adding a block
-Setting response to Total execution time to add this block was 42 milliseconds
-...{"selection":1,"response":"Total execution time to add this block was 42 milliseconds"}
-Adding a block
-Setting response to Total execution time to add this block was 6 milliseconds
-...{"selection":1,"response":"Total execution time to add this block was 6 milliseconds"}
-Verifying entire chain
-Chain verification: TRUE
-Total execution time required to verify the chain was 1 milliseconds
-Setting response to Total execution time to verify the chain was  1 milliseconds
-View the Blockchain
-Setting response to {"ds_chain" : [ {"index" : 0,"time stamp " : "2022-02-25 17:41:11.927","Tx ": "Genesis","PrevHash" : "","nonce" : 286,"difficulty": 2},
-{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 100 DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
-{"index" : 2,"time stamp " : "2022-02-25 17:44:27.43","Tx ": "Marty pays Joe 50 DSCoin","PrevHash" : "000D14B83028DD36BD6330B8DAB185012F8625E9C9D1A8704E9C1189FD98D9DF","nonce" : 819,"difficulty": 2},
-{"index" : 3,"time stamp " : "2022-02-25 17:45:22.044","Tx ": "Joe pays Andy 10 DSCoin","PrevHash" : "00B4CC539C5CC36AE2F09CC7B857A1330D2D02C00CA90D4A34ACD7E01D7225FC","nonce" : 167,"difficulty": 2}
- ], "chainHash":"002EEC64A0ABB7FF1FBBF72BE17BD3DC3C1D5FE5FB01360680930B1CFCF5A84A"}
-Corrupt the Blockchain
-Block 1 now holds Mike pays Marty 76 DSCoin
-Setting response to Block 1 now holds Mike pays Marty 76 DSCoin
-View the Blockchain
-Setting response to {"ds_chain" : [ {"index" : 0,"time stamp " : "2022-02-25 17:41:11.927","Tx ": "Genesis","PrevHash" : "","nonce" : 286,"difficulty": 2},
-{"index" : 1,"time stamp " : "2022-02-25 17:42:46.053","Tx ": "Mike pays Marty 76 DSCoin","PrevHash" : "0026883909AA470264145129F134489316E6A38439240D0468D69AA9665D4993","nonce" : 165,"difficulty": 2},
-{"index" : 2,"time stamp " : "2022-02-25 17:44:27.43","Tx ": "Marty pays Joe 50 DSCoin","PrevHash" : "000D14B83028DD36BD6330B8DAB185012F8625E9C9D1A8704E9C1189FD98D9DF","nonce" : 819,"difficulty": 2},
-{"index" : 3,"time stamp " : "2022-02-25 17:45:22.044","Tx ": "Joe pays Andy 10 DSCoin","PrevHash" : "00B4CC539C5CC36AE2F09CC7B857A1330D2D02C00CA90D4A34ACD7E01D7225FC","nonce" : 167,"difficulty": 2}
- ], "chainHash":"002EEC64A0ABB7FF1FBBF72BE17BD3DC3C1D5FE5FB01360680930B1CFCF5A84A"}
-Verifying entire chain
-Chain verification: FALSE
-Improper hash on node 1 Does not begin with 00
-Total execution time required to verify the chain was 0 milliseconds
-Setting response to Total execution time to verify the chain was  0 milliseconds
-Repairing the entire chain
-Setting response to Total execution time required to repair the chain was 8 milliseconds
-Verifying entire chain
-Chain verification: TRUE
-Total execution time required to verify the chain was 1 milliseconds
-Setting response to Total execution time to verify the chain was  1 milliseconds
-Adding a block
-Setting response to Total execution time to add this block was 224 milliseconds
-...{"selection":1,"response":"Total execution time to add this block was 224 milliseconds"}
-Response : {"selection":0,"size":5,"chainHash":"0000DF114971BAF2F0DCC51777451973DF1AFE93189B64D7AC8BA06E39681067","totalHashes":66560,"totalDiff":12,"recentNonce":9610,"diff":4,"hps":3231017}
+THE JSON REQUEST MESSAGE IS SHOWN HERE
+THE JSON RESPONSE MESSAGE IS SHOWN HERE
+
+We have a visitor
+THE JSON REQUEST MESSAGE IS SHOWN HERE
+THE JSON RESPONSE MESSAGE IS SHOWN HERE
+
+We have a visitor
+THE JSON REQUEST MESSAGE IS SHOWN HERE
+THE JSON RESPONSE MESSAGE IS SHOWN HERE
+
+etc.
 
 ```
 
 **Task 1 Client Source Code**
 
-Include all client side source code clearly labelled. This includes the RequestMessage and ResponseMessage classes. 
+Include all client side source code clearly labelled. This includes the RequestMessage and ResponseMessage classes.
 
 **Task 1 Server Source Code**
 
@@ -450,7 +457,7 @@ Include all server side source code clearly labelled. This includes the RequestM
 **Task 1 Grading Rubric 40 Points**
 
 Rubric:
-1. The execution is correct and includes the same tests as above - in the same order (the names "Mike", "Marty", "Joe" and "Andy" have been replaced) and a client server architecture based on TCP sockets is used. 20 points.
+1. The execution is correct and includes the same tests as above - in the same order. A client server architecture based on TCP sockets is used. 20 points.
 2. The JSON message being sent to the server is well designed (RequestMessage.java): 5 Points
 3. The JSON message being sent from the server to the client is well designed (ResponseMessage.java): 5 Points.
 4. Separation of concerns is well done: 5 points.
@@ -460,7 +467,7 @@ Rubric:
 
 ## Task 2 Exploring Web3 using Algorand
 
-We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. Using a browser, the user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred. 
+We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. Using a browser, the user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred.
 
 The overall architecture on most Web3 systems is "decentralized peer-to-peer" rather than the more centralized "client server".
 
@@ -483,7 +490,7 @@ To get started using Algorand, we need a wallet and an account.
 ```
 K2EP3LIPR3KEI7QOVW3UHLN6JGASMF442YRI5IPO6N6UWPUVNZJ6BVFT4U
 ```
-NOTE: These are testnet Algos and not real Algos. We cannot exchange them for anything of value. 
+NOTE: These are testnet Algos and not real Algos. We cannot exchange them for anything of value.
 
 12. Also, keep a copy of the transaction ID.
 In a recent transaction, my transaction ID was 4CTARWVWGPBL6G4GOKBIQQLKH5NOHOGV3EVF5XMFQGIGUA72HN6Q.
@@ -500,7 +507,7 @@ GET https://node.testnet.algoexplorerapi.io/genesis
 ```
 14. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
 
-15. Visit the URL https://testnet.algoexplorer.io/api-dev/indexer-v2 and note the base URL. 
+15. Visit the URL https://testnet.algoexplorer.io/api-dev/indexer-v2 and note the base URL.
 The base URL is https://algoindexer.testnet.algoexplorerapi.io/.
 
 16. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me. To do this, you will need to use the Algorand Indexer V2 API.
