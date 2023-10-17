@@ -465,54 +465,57 @@ Rubric:
 
 -----
 
-## Task 2 Exploring Web3 using Algorand
+## Task 2 Exploring Remote Procedure Calls using JSON-RPC and Ethereum
 
 We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. Using a browser, the user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred.
 
-The overall architecture on most Web3 systems is "decentralized peer-to-peer" rather than the more centralized "client server".
+The overall architecture on most Web3 systems is "decentralized peer-to-peer" rather than centralized "client server".
 
-Algorand is a Web3 blockchain that competes with Ethereum.
+Ethereum is a Web3 blockchain that competes with Bitcoin.
 
-To get started using Algorand, we need a wallet and an account.  
+Here, we will visit the Ethereum blockchain using the REST API provided by Infura.
+To get started using Infura, we need an account and an API Key.  
 
-0. Visit https://perawallet.app/ and launch Pera Web to visit https://web.perawallet.app/.
-1. Choose "Create an Account" and choose a password. This is stored on your local machine.
-2. Choose an account name. You might use your Andrew id. This too is stored on your local machine.
-3. Locate your recovery phrase. See "view pass phrase" after clicking the three horizontal dots on the Accounts page. Take a screen shot and save it locally on disk. A recovery phrase should never be shared. From the recovery phrase, your private key can be generated.
-4. Keep the recovery phrase in some place private. It is suggested that this phrase be stored on paper and off any computer. If you lose your recovery phrase, you lose your money. Do not include your recovery phrase on the PDF that you will submit.
-5. Change to the Algorand testnet by selecting "Settings" and then "Node Settings" and then "testnet". We are NOT using the mainnet. The mainnet Algos have real value. The testnet Algos have no value. But note that your private key (or recovery phrase) will work on both the mainnet and the testnet.
-6. Visit https://testnet.algoexplorer.io/dispenser to get funds for the testnet.
-7. Use your account address to get funds from the dispenser and be sure to save the transaction ID. You will need that ID later.
-8. You may be asked to prove that you are human.
-9. Algos will be dispensed to your account (that is, the transfer will be recorded on the testnet blockchain). There are no Algos physically "in" your wallet. Note that you need to look at the testnet and not the mainnet to see the Algos controlled by your wallet.
-10. After some time, the wallet will show the new balance of 10 Algos.
-11. Transfer 5 Algos from your account to my account address. My account address is
-```
-K2EP3LIPR3KEI7QOVW3UHLN6JGASMF442YRI5IPO6N6UWPUVNZJ6BVFT4U
-```
-NOTE: These are testnet Algos and not real Algos. We cannot exchange them for anything of value.
+1. Visit the Infura website:  https://app.infura.io/register
+2. Enter your first and last name, email address, and a password.
+3. Check the “Terms of Use” confirmation checkbox.
+4. Click the “CREATE A FREE ACCOUNT” button.
+5. You will receive an email from Infura to verify your email address.
+6. Go to your email inbox and look for an email from Infura with the title "Verify your email".
+7. Click on the link in the email to verify your account.
+8. After you’ve registered, you can create an API key and start using Infura’s
+   services. Be sure to handle your API keys securely.
+9. To create an API key, visit https://app.infura.io/dashboard and select Create New API Key.
+10. Give the key a name.  
+11. We need a client. IntelliJ allows you to directly make HTTPS requests.
+12. In an IntelliJ project, right click the Project node and select New HTTP Request.
+13. Requests written using curl are supported. The IntelliJ HTTP client will convert the curl request
+into IntelliJ's format.
 
-12. Also, keep a copy of the transaction ID.
-In a recent transaction, my transaction ID was 4CTARWVWGPBL6G4GOKBIQQLKH5NOHOGV3EVF5XMFQGIGUA72HN6Q.
+The JSON-RPC API is described here:
+https://docs.infura.io/networks/ethereum/json-rpc-methods
 
-Next, we want to visit the Algorand blockchain using API's. There are two API's available. One is the Algorand Node V2 and the other is the Algorand Indexer V2.
-
-13. In an IntelliJ project, right click the Project node and select New HTTP Request.
-We can enter our HTTP request directly into IntelliJ. For example, to view the details of the genesis block on the Algorand testnet, enter the following HTTP request and click the green triangle just to the left of the request:
+14. Here, we will view the details of the genesis block on the Ethereum blockchain, enter the following HTTP request and click the green triangle just to the left of the request:
 
 ```
-###
-GET https://node.testnet.algoexplorerapi.io/genesis
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["0x0", true],"id":1}' https://mainnet.infura.io/v3/PLACE-YOUR-API-KEY-HERE-WITH-NO-QUOTES
+```
+
+15. Make a copy of your request (from IntelliJ) and make a copy of your response (from IntelliJ).
+
+16. The above was a request for block number 0. Do the same for block number 1.
+
+17. Make a copy of your request (from IntelliJ) and make a copy of your response (from IntelliJ).
+
+18. To examine the balance of a particular account, try the following:
 
 ```
-14. Note that you may directly post curl requests into the IntelliJ HTTP client and it will convert the request into IntelliJ's format.
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x742d35Cc6634C0532925a3b844Bc454e4438f44e", "latest"],"id":1}' https://mainnet.infura.io/v3/PLACE-YOUR-API-KEY-HERE-WITH-NO-QUOTES
+```
 
-15. Visit the URL https://testnet.algoexplorer.io/api-dev/indexer-v2 and note the base URL.
-The base URL is https://algoindexer.testnet.algoexplorerapi.io/.
+19. Make a copy of your request (from IntelliJ) and make a copy of your response (from IntelliJ).
 
-16. Using IntelliJ, create two HTTP requests to visit the testnet blockchain and get the details associated with both of the transfer transactions. The first will show the transation details when you took funds from the dispenser. The second will show the transaction details when you sent 5 Algos to me. To do this, you will need to use the Algorand Indexer V2 API.
-
-Using the IntelliJ HTTP client, copy (or take a screenshot) of the HTTP requests and the HTTP responses (including JSON). Include the two request/response pairs on your PDF.
+Include the three request/response pairs on your PDF.
 
 :checkered_flag:**On your single pdf, make a copy of the screenshots labelled clearly as Project3Task2.**
 
@@ -520,9 +523,9 @@ Using the IntelliJ HTTP client, copy (or take a screenshot) of the HTTP requests
 
 Rubric:
 1. The IntelliJ HTTP client is being used correctly. 5 points.
-2. The HTTP client resquest is correct. 5 Points.
-3. The HTTP client response is correct: 5 Points.
-4. The correct transactions are shown on the PDF: 5 points.
+2. The request and response (including JSON) associated with Ethereum block number 0 is shown on the pdf. 5 Points.
+3. The request and response (including JSON) associated with Ethereum block number 1 is shown on the pdf. 5 Points.
+4. The request and response (including JSON) associated with an account balance query is shown on the pdf. 5 Points.
 
 **Project 3 Submission Requirements**
 
