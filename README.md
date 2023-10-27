@@ -466,6 +466,7 @@ Rubric:
 -----
 
 ## Task 2 Exploring Remote Procedure Calls using JSON-RPC and Ethereum
+## Infura is not working properly. So, Task 2 is dropped from Project 2
 
 We might define Web 1.0 as a read only distributed system. Fetch a document and read it in your browser. Web 2.0 might be described as a "read-write" distributed system. Using a browser, the user is able to enter data and communicate that data to servers. Web 3.0 might be categorized as a "read-write-own" distributed system. Cryptocurrency and tokens may be owned and transferred.
 
