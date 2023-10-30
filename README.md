@@ -181,7 +181,7 @@ You are not allowed to use a Large Language Model on Task 0 or Task 2 but may us
 
 Note that if you do use code from an external source or an LLM, you are still responsible for that code. That is, you may be asked questions about the code on exams. You will not have access to stack overflow or an LLM on exams.
 
-In Task 2, there is no programming. You will work with an Algorand wallet and learn how to transfer funds (Algos) from one account to another. You will learn how to examine account values and transactions on Algorand's testnet blockchain. Algorand's REST API will be accessed with HTTP requests. To demonstrate that you have completed your work, you will submit screenshots on your single pdf.  
+In Task 2, there is no programming. You will work with an Ethereum wallet and learn how to transfer funds (Eth) from one account to another. You will learn how to examine account values and transactions on Ethereum's testnet blockchain. Ethereum's REST API will be accessed with HTTP requests. To demonstrate that you have completed your work, you will submit screenshots on your single pdf.  
 
 ## Task 0  
 
