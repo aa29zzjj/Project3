@@ -23,7 +23,7 @@ blockchain (Task 0) and a distributed system where a remote client interacts wit
 
 Another important non-functional characteristic is interoperability. This will be illustrated in Task 2 where HTTP and JSON are used to interact with the Algorand blockchain.
 
-Unlike Bitcoin, Algorand is based on an environmentally friendly consensus protocol. In Algorand, there is no proof-of-work. It is based on pure proof-of-stake.
+Unlike Bitcoin, Ethereum is based on an environmentally friendly consensus protocol. In Ethereum, there is no proof-of-work. It is based on proof-of-stake.
 
 ### Prerequisites
 
@@ -92,7 +92,9 @@ public class Main {
 }
 ```
 
-6. Suppose we receive a message as a JSON string. We may want to deserialize the JSON string to a Java object. Why do this? This is a huge convenience. We do not have to parse the message ourselves.
+6. Suppose we receive a message as a JSON string. We may want to deserialize
+the JSON string to a Java object. Why do this? This is a huge convenience.
+We do not have to parse the message ourselves.
 
 ```
 package org.example;
