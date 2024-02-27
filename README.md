@@ -600,7 +600,7 @@ When signing a message using JSON, the normal practice is to construct a JSON me
 
 {"NameOfField1":"Value1", "NameOfField2":"Value2","signature":"value of signature"}
 
-The signature value is an encrypted hash of the concatenation of all of the values (except the signature value) and does not include the names. This should make signature creation and verification easier to do. So, in this example, you would really only sign "Value1" + "Value2".
+The signature value is an encrypted hash of the concatenation of all of the values (except the signature value) and does not include the names. This should make signature creation and verification easier to do. So, in this example, you would really only sign "Value1" + "Value2". You would not include "NameOfField1" or "NameOfField2" in the computation of the signature.
 
 
 :checkered_flag:**On your single pdf, make a copy of your client side code and label it clearly as "Project3Task2SigningClient".**
