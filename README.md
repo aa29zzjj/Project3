@@ -596,6 +596,13 @@ As before, use a **proxy design** to encapsulate the communication code.
 
 Produce a screen shot (or copy and paste) illustrating a successful execution and submit the interaction in the single pdf file as described at the end of this document. The screen shot (or copy and paste) will show three different clients interacting with the server using three distinct ID&#39;s.
 
+When signing a message using JSON, the normal practice is to construct a JSON message like this:
+
+{"NameOfField1":"Value1", "NameOfField2":"Value2","signature":"value of signature"}
+
+The signature value is an encrypted hash of the concatenation of all of the values (except the signature value) and does not include the names. This should make signature creation and verification easier to do.
+
+
 :checkered_flag:**On your single pdf, make a copy of your client side code and label it clearly as "Project3Task2SigningClient".**
 
 :checkered_flag:**On your single pdf, make a copy of your server side code and label it clearly as "Project3Task2VerifyingServer".**
