@@ -3,7 +3,7 @@
 
 
 Assigned: Friday, February 23, 2024
-Due Friday, March 15, 2024 at 11:59pm
+Due Sunday, March 17, 2024 at 11:59pm
 
 ### Important Note
 
