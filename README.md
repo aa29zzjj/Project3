@@ -607,9 +607,9 @@ The signature value is an encrypted hash of the concatenation of all of the valu
 
 :checkered_flag:**On your single pdf, make a copy of your server side code and label it clearly as "Project3Task2VerifyingServer".**
 
-:checkered_flag:**Take a screenshot (or copy and paste) of your client console screen. Show a single client interacting with the server using the keys generated when the client code is run. All of the client's key material must be displayed on the client side console. Display the private key (d and n) and the public key (e and n). The client will perform a few operations on the server. Each request will be signed. On your single pdf, label this screenshot as "Project2Task2ClientConsole".**
+:checkered_flag:**Take a screenshot (or copy and paste) of your client console screen. Show a single client interacting with the server using the keys generated when the client code is run. All of the client's key material must be displayed on the client side console. Display the private key (d and n) and the public key (e and n). The client will perform a few operations on the server. Each request will be signed. On your single pdf, label this screenshot as "Project3Task2ClientConsole".**
 
-:checkered_flag:**Take a screenshot of your server console screen. It will show each visitor's public key material (e and n) and whether or not the signature is verified. On your single pdf, label this screenshot as "Project2Task2ServerConsole". You will show three different visitors who are all verified.**
+:checkered_flag:**Take a screenshot of your server console screen. It will show each visitor's public key material (e and n) and whether or not the signature is verified. On your single pdf, label this screenshot as "Project3Task2ServerConsole". You will show three different visitors who are all verified.**
 
 **Task 2 Grading Rubric 20 Points**
 
