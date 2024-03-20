@@ -614,11 +614,11 @@ The signature value is an encrypted hash of the concatenation of all of the valu
 **Task 2 Grading Rubric 20 Points**
 
 Rubric:
-1. All messages are signed by the client and verified on the server. 15 points.
-3. The JSON message being sent to the server is well designed and is represented in RequestMessage.java: 5 Points
-4. The JSON message being sent from the server to the client is well designed and is represented in ResponseMessage.java: 5 Points.
-5. Separation of concerns is well done with a proxy design. : 5 points.
-6. The single PDF file includes sections correctly labelled: 5 Points.
+1. All messages are signed by the client and verified on the server. 10 points.
+3. The JSON message being sent to the server is well designed and is represented in RequestMessage.java: 2 Points
+4. The JSON message being sent from the server to the client is well designed and is represented in ResponseMessage.java: 3 Points.
+5. Separation of concerns is well done with a proxy design. : 2 points.
+6. The single PDF file includes sections correctly labelled: 3 Points.
 
 
 RSAExample.java - Key generation and sample encryption and decryption
