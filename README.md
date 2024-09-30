@@ -1,9 +1,9 @@
 # 95-702 Distributed Systems For Information Systems Management
-## Project 3 Blockchain and Signatures              Spring 2024
+## Project 3 Blockchain and Signatures              Fall 2024
 
 
-Assigned: Friday, February 23, 2024
-Due Sunday, March 17, 2024 at 11:59pm
+Assigned: Monday, October 7, 2024
+Due Monday, October 28, 2024 at 2:00 pm
 
 ### Important Note
 
